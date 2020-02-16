@@ -163,11 +163,11 @@ $GOPATH/pkg/mod along with the value of
   :package-version '(lsp-mode "6.3.2"))
 
 (lsp-register-custom-settings
- '(("gopls.usePlaceholders" lsp-gopls-use-placeholders t)
-   ("gopls.hoverKind" lsp-gopls-hover-kind)
-   ("gopls.buildFlags" lsp-gopls-build-flags)
-   ("gopls.env" lsp-gopls-env)
-   ("gopls.linkTarget" lsp-gopls-link-target)))
+ '(("gopls.usePlaceholders" lsp-go-use-placeholders t)
+   ("gopls.hoverKind" lsp-go-hover-kind)
+   ("gopls.buildFlags" lsp-go-build-flags)
+   ("gopls.env" lsp-go-env)
+   ("gopls.linkTarget" lsp-go-link-target)))
 
 (lsp-register-client
  (make-lsp-client :new-connection (lsp-stdio-connection

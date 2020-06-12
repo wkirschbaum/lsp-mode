@@ -1923,11 +1923,12 @@ WORKSPACE is the workspace that contains the progress token."
                                                 (replace-regexp-in-string "[\n\t ]+" " "))
                                            'face lsp-modeline-code-actions-face))
           (single-action? (= (length actions) 1))
-          (execute-code-actions-binding (->> 'lsp-execute-code-action
-                                             (where-is-internal)
-                                             (-find (lambda (o)
-                                                      (not (member (aref o 0) '(menu-bar normal-state)))))
-                                             (key-description)))
+          (keybinding (-some->> #'lsp-execute-code-action
+                        where-is-internal
+                        (-find (lambda (o)
+                                 (not (member (aref o 0) '(menu-bar normal-state)))))
+                        key-description
+                        (format "(%s)")))
           (string (if single-action?
                       (format " %s %s " icon first-action-string)
                     (format " %s %s %s " icon first-action-string
@@ -1935,7 +1936,7 @@ WORKSPACE is the workspace that contains the progress token."
                                         'display `((height 0.9))
                                         'face lsp-modeline-code-actions-face)))))
     (propertize string
-                'help-echo (concat (format "Apply code actions (%s)\nmouse-1: " execute-code-actions-binding)
+                'help-echo (concat (format "Apply code actions %s\nmouse-1: " keybinding)
                                    (if single-action?
                                        first-action-string
                                      "select from multiple code actions"))

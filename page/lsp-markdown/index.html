@@ -13,14 +13,14 @@
         <meta name="author" content="ercdll1337@gmail.com">
       
       
-        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/settings/">
+        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-markdown/">
       
       <link rel="shortcut icon" href="../../examples/logo-mini.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
     
     
       
-        <title>Settings - LSP Mode - LSP support for Emacs</title>
+        <title>Markdown - LSP Mode - LSP support for Emacs</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#settings" class="md-skip">
+        <a href="#markdown" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Settings
+              Markdown
             
           </span>
         </div>
@@ -169,15 +169,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link">
         Home
       </a>
     </li>
@@ -192,8 +190,33 @@
   
   
   
+    
+
+  
+  
+  
     <li class="md-tabs__item">
-      <a href="../languages/" class="md-tabs__link">
+      <a href="../settings/mode/" class="md-tabs__link">
+        Settings
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../languages/" class="md-tabs__link md-tabs__link--active">
         Languages
       </a>
     </li>
@@ -353,14 +376,12 @@
       
 
 
-  
-
 
   
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" >
     
     <label class="md-nav__link" for="nav-1">
       Home
@@ -460,28 +481,6 @@
           
 
 
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
-      Settings
-    </a>
-    
-  </li>
-
-        
-          
-          
-          
-
-
 
   <li class="md-nav__item">
     <a href="../keybindings/" class="md-nav__link">
@@ -500,14 +499,14 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-6" type="checkbox" id="nav-1-6" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-5" type="checkbox" id="nav-1-5" >
     
-    <label class="md-nav__link" for="nav-1-6">
+    <label class="md-nav__link" for="nav-1-5">
       Extensions
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Extensions" data-md-level="2">
-      <label class="md-nav__title" for="nav-1-6">
+      <label class="md-nav__title" for="nav-1-5">
         <span class="md-nav__icon md-icon"></span>
         Extensions
       </label>
@@ -604,8 +603,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../limitations/" class="md-nav__link">
-      Limitations
+    <a href="../file-watchers/" class="md-nav__link">
+      File watchers
     </a>
   </li>
 
@@ -680,11 +679,308 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
     
     <label class="md-nav__link" for="nav-2">
+      Settings
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Settings" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Settings
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" >
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Features
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Features" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
+        Features
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../settings/mode/" class="md-nav__link">
+      Core
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../settings/completion/" class="md-nav__link">
+      Completion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../settings/diagnostics/" class="md-nav__link">
+      Diagnostics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../settings/headerline/" class="md-nav__link">
+      Headerline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../settings/modeline/" class="md-nav__link">
+      Modeline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../settings/lens/" class="md-nav__link">
+      Lens
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../settings/icons/" class="md-nav__link">
+      Icons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../settings/semantic-tokens/" class="md-nav__link">
+      Semantic Tokens
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" >
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Extensions
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Extensions" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        Extensions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="https://emacs-lsp.github.io/lsp-ui" class="md-nav__link">
+      UI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="https://github.com/emacs-lsp/lsp-treemacs" class="md-nav__link">
+      Treemacs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="https://github.com/emacs-lsp/helm-lsp" class="md-nav__link">
+      Helm
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="https://github.com/emacs-lsp/lsp-ivy" class="md-nav__link">
+      Ivy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="https://github.com/gagbo/consult-lsp" class="md-nav__link">
+      Consult
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../settings/dired/" class="md-nav__link">
+      Dired
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../settings/iedit/" class="md-nav__link">
+      Iedit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../settings/ido/" class="md-nav__link">
+      Ido
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
       Languages
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Languages" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+      <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon"></span>
         Languages
       </label>
@@ -854,6 +1150,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-d/" class="md-nav__link">
+      D
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="https://emacs-lsp.github.io/lsp-dart" class="md-nav__link">
       Dart
     </a>
@@ -997,8 +1306,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../lsp-bingo.md" class="md-nav__link">
-      Go (bingo)
+    <a href="../lsp-grammarly/" class="md-nav__link">
+      Grammarly
     </a>
   </li>
 
@@ -1062,47 +1371,21 @@
 
 
   <li class="md-nav__item">
-    <a href="../lsp-emmy-lua/" class="md-nav__link">
-      Lua (EmmyLua)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../lsp-lua-language-server/" class="md-nav__link">
-      Lua (Lua Language Server)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../lsp-lua-lsp/" class="md-nav__link">
-      Lua (Lua-Lsp)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
     <a href="https://emacs-lsp.github.io/lsp-java" class="md-nav__link">
       Java
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-deno/" class="md-nav__link">
+      Javascript/Typescript (deno)
     </a>
   </li>
 
@@ -1182,6 +1465,164 @@
     <a href="../lsp-kotlin/" class="md-nav__link">
       Kotlin
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-emmy-lua/" class="md-nav__link">
+      Lua (EmmyLua)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-lua-language-server/" class="md-nav__link">
+      Lua (Lua Language Server)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-lua-lsp/" class="md-nav__link">
+      Lua (Lua-Lsp)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Markdown
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Markdown
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugger-not-available" class="md-nav__link">
+    Debugger: Not available
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-configurations" class="md-nav__link">
+    Available configurations
+  </a>
+  
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-markdown-remark-check-text-with-mutator" class="md-nav__link">
+    lsp-markdown-remark-check-text-with-mutator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-markdown-remark-check-text-with-setting" class="md-nav__link">
+    lsp-markdown-remark-check-text-with-setting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-markdown-remark-plugins" class="md-nav__link">
+    lsp-markdown-remark-plugins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-markdown-server-command" class="md-nav__link">
+    lsp-markdown-server-command
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-markdown-server-command-args" class="md-nav__link">
+    lsp-markdown-server-command-args
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1609,7 +2050,20 @@
 
   <li class="md-nav__item">
     <a href="../lsp-verilog/" class="md-nav__link">
-      Verilog/SystemVerilog
+      Verilog/SystemVerilog (hdl-checker)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-svlangserver/" class="md-nav__link">
+      Verilog/SystemVerilog (svlangserver)
     </a>
   </li>
 
@@ -1679,6 +2133,19 @@
   </li>
 
         
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-zig/" class="md-nav__link">
+      Zig
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1694,14 +2161,14 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-4">
       Debugging
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Debugging" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-4">
         <span class="md-nav__icon md-icon"></span>
         Debugging
       </label>
@@ -1736,14 +2203,14 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-5">
       Gallery
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Gallery" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Gallery
       </label>
@@ -1778,14 +2245,14 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-6">
       Changelog
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Changelog" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon"></span>
         Changelog
       </label>
@@ -1820,14 +2287,14 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-7">
       Tutorials
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-7">
         <span class="md-nav__icon md-icon"></span>
         Tutorials
       </label>
@@ -1886,6 +2353,19 @@
   </li>
 
         
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/debugging-clojure-script/" class="md-nav__link">
+      Debugging Clojurescript
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1901,14 +2381,14 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
     
-    <label class="md-nav__link" for="nav-7">
+    <label class="md-nav__link" for="nav-8">
       Blog
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Blog" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-8">
         <span class="md-nav__icon md-icon"></span>
         Blog
       </label>
@@ -1925,14 +2405,14 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-1" type="checkbox" id="nav-8-1" >
     
-    <label class="md-nav__link" for="nav-7-1">
+    <label class="md-nav__link" for="nav-8-1">
       2020
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="2020" data-md-level="2">
-      <label class="md-nav__title" for="nav-7-1">
+      <label class="md-nav__title" for="nav-8-1">
         <span class="md-nav__icon md-icon"></span>
         2020
       </label>
@@ -1972,14 +2452,14 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" >
     
-    <label class="md-nav__link" for="nav-8">
+    <label class="md-nav__link" for="nav-9">
       Support us
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Support us" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
+      <label class="md-nav__title" for="nav-9">
         <span class="md-nav__icon md-icon"></span>
         Support us
       </label>
@@ -2022,6 +2502,89 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugger-not-available" class="md-nav__link">
+    Debugger: Not available
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-configurations" class="md-nav__link">
+    Available configurations
+  </a>
+  
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-markdown-remark-check-text-with-mutator" class="md-nav__link">
+    lsp-markdown-remark-check-text-with-mutator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-markdown-remark-check-text-with-setting" class="md-nav__link">
+    lsp-markdown-remark-check-text-with-setting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-markdown-remark-plugins" class="md-nav__link">
+    lsp-markdown-remark-plugins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-markdown-server-command" class="md-nav__link">
+    lsp-markdown-server-command
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-markdown-server-command-args" class="md-nav__link">
+    lsp-markdown-server-command-args
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2032,44 +2595,49 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/emacs-lsp/lsp-mode/edit/master/docs/page/settings.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/emacs-lsp/lsp-mode/edit/master/docs/page/lsp-markdown.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">#</a></h1>
-<p>These are <code>lsp-mode</code> specific custom settings:</p>
-<ul>
-<li><code>lsp-log-io</code> - If non-nil, print all messages to and from the language server to <code>*lsp-log*</code>.</li>
-<li><code>lsp-print-performance</code> - If non-nil, print performance info. to <code>*lsp-log*</code>.</li>
-<li><code>lsp-keep-workspace-alive</code> - If non nil keep workspace alive when the last workspace buffer is closed.</li>
-<li><code>lsp-enable-snippet</code> - Enable/disable snippet completion support.</li>
-<li><code>lsp-auto-guess-root</code> - Automatically guess the project root using projectile/project. Do <strong>not</strong> use this setting unless you are familiar with <code>lsp-mode</code> internals and you are sure that all of your projects are following <code>projectile=/=project.el</code> conventions.</li>
-<li><code>lsp-restart</code> - Defines how server exited event must be handled.</li>
-<li><code>lsp-session-file</code> - File where session information is stored.</li>
-<li><code>lsp-auto-configure</code> - Auto configure <code>lsp-mode</code>. When set to <code>t</code>, <code>lsp-mode</code> will auto-configure <code>lsp-ui</code>, <code>dap-mode</code> and other settings that makes sense to enable by default.</li>
-<li><code>lsp-document-sync-method</code> - How to sync the document with the language server.</li>
-<li><code>lsp-auto-execute-action</code> - Auto-execute single action.</li>
-<li><code>lsp-eldoc-render-all</code> - Display all of the info returned by <code>document/onHover</code>. If this is nil, <code>eldoc</code> will show only the symbol information.</li>
-<li><code>lsp-enable-completion-at-point</code> - Enable <code>completion-at-point</code> integration.</li>
-<li><code>lsp-enable-xref</code> - Enable xref integration.</li>
-<li><code>lsp-diagnostics-provider</code> - Specifies which package to use for diagnostics. Choose from <code>:auto</code>, <code>:flycheck</code>, <code>:flymake</code> and <code>:none</code>. Default is <code>:auto</code> which means use <code>:flycheck</code> if present and fallback to <code>:flymake</code>.</li>
-<li><code>lsp-enable-indentation</code> - Indent regions using the file formatting functionality provided by the language server.</li>
-<li><code>lsp-enable-on-type-formatting</code> - Enable <code>textDocument/onTypeFormatting</code> integration.</li>
-<li><code>lsp-before-save-edits</code> - If non-nil, <code>lsp-mode</code> will apply edits suggested by the language server before saving a document.</li>
-<li><code>lsp-imenu-show-container-name</code> - Display the symbol's container name in an imenu entry.</li>
-<li><code>lsp-imenu-container-name-separator</code> - Separator string to use to separate the container name from the symbol while displaying imenu entries.</li>
-<li><code>lsp-imenu-sort-methods</code> - How to sort the imenu items. The value is a list of <code>kind</code>, <code>name</code> or <code>position</code>. Priorities are determined by the index of the element.</li>
-<li><code>lsp-response-timeout</code> - Number of seconds to wait for a response from the language server before timing out.</li>
-<li><code>lsp-enable-file-watchers</code> - If non-nil lsp-mode will watch the files in the workspace if the server has requested that.</li>
-<li><code>lsp-server-trace</code> - Request trace mode on the language server.</li>
-<li><code>lsp-semantic-tokens-enable</code> - Enable semantic tokens highlighting support</li>
-<li><code>lsp-enable-imenu</code> - If non-nil, automatically enable imenu integration when server provides <code>textDocument/documentSymbol</code>.</li>
-<li><code>lsp-signature-auto-activate</code> - Auto activate signature when trigger conditions are meet.</li>
-<li><code>lsp-signature-render-documentation</code> - Include signature documentation in signature help.</li>
-<li><code>lsp-enable-text-document-color</code> - Enable <code>textDocument/documentColor</code> when server supports it.</li>
-<li><code>lsp-headerline-breadcrumb-enable</code> - Enable <code>lsp-headerline-breadcrumb-mode</code>.</li>
-</ul>
+                <h1 id="markdown">Markdown<a class="headerlink" href="#markdown" title="Permanent link">#</a></h1>
+<h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
+<p>For more information about the LSP server, check <a href="https://github.com/unifiedjs/unified-language-server">unified-language-server</a>.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
+<p><code>npm i -g unified-language-server</code></p>
+<h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
+<h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
+<h3 id="lsp-markdown-remark-check-text-with-mutator"><code>lsp-markdown-remark-check-text-with-mutator</code><a class="headerlink" href="#lsp-markdown-remark-check-text-with-mutator" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>lsp-string-vector</code></p>
+<p><em>Default:</em> <code>[#remark-retext #parse-latin]</code></p>
+<p>Vector of additional mutators.</p>
+<p>For a complete list of plugins, check:
+ https://github.com/unifiedjs/unified-language-server/blob/main/CONFIGURATION.md#re-using-settings</p>
+<hr />
+<h3 id="lsp-markdown-remark-check-text-with-setting"><code>lsp-markdown-remark-check-text-with-setting</code><a class="headerlink" href="#lsp-markdown-remark-check-text-with-setting" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(choice ((const retext-english) (const remark-parse)))</code></p>
+<p><em>Default:</em> <code>retext-english</code></p>
+<p>Configure <code>checkTextWith</code> subproperty.</p>
+<p>For a complete list of plugins, check:
+ https://github.com/unifiedjs/unified-language-server/blob/main/CONFIGURATION.md#re-using-settings</p>
+<hr />
+<h3 id="lsp-markdown-remark-plugins"><code>lsp-markdown-remark-plugins</code><a class="headerlink" href="#lsp-markdown-remark-plugins" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>lsp-string-vector</code></p>
+<p><em>Default:</em> <code>[[#remark-preset-lint-markdown-style-guide]]</code></p>
+<p>The JSON configuration object for plugins.</p>
+<p>For a complete list of plugins, check:
+ https://github.com/unifiedjs/unified-language-server/blob/main/CONFIGURATION.md#re-using-settings</p>
+<hr />
+<h3 id="lsp-markdown-server-command"><code>lsp-markdown-server-command</code><a class="headerlink" href="#lsp-markdown-server-command" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>string</code></p>
+<p><em>Default:</em> <code>unified-language-server</code></p>
+<p>The binary (or full path to binary) which executes the server.</p>
+<hr />
+<h3 id="lsp-markdown-server-command-args"><code>lsp-markdown-server-command-args</code><a class="headerlink" href="#lsp-markdown-server-command-args" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat 'string)</code></p>
+<p><em>Default:</em> <code>(--parser=remark-parse --stdio)</code></p>
+<p>Command-line arguments for the markdown lsp server.</p>
+<hr />
                 
                   
                     
@@ -2078,7 +2646,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 1, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 31, 2021</span>
     
   </small>
 </div>
@@ -2101,7 +2669,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../main-features/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../lsp-lua-lsp/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -2110,19 +2678,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Main features
+                Lua (Lua-Lsp)
               </div>
             </div>
           </a>
         
         
-          <a href="../keybindings/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../lsp-nim/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Keybindings
+                Nim
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

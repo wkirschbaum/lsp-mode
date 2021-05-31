@@ -22,7 +22,7 @@
     "server-url": "https://github.com/angular/vscode-ng-language-service",
     "installation-url": "https://github.com/emacs-lsp/lsp-mode/wiki/Install-Angular-Language-server",
     "installation": "npm install -g @angular/language-service@next typescript  @angular/language-server",
-      "debugger": "Not relevant"
+    "debugger": "Not relevant"
   },
   {
     "name": "bash",
@@ -30,7 +30,7 @@
     "server-name": "bash-language-server",
     "server-url": "https://github.com/mads-hartmann/bash-language-server",
     "installation": "npm i -g bash-language-server",
-    "lsp-install-server": "bash",
+    "lsp-install-server": "bash-ls",
     "debugger": "Not available"
   },
   {
@@ -94,6 +94,14 @@
     "installation": "npm install -g vscode-css-languageserver-bin",
     "lsp-install-server": "css-ls",
     "debugger": "Not available"
+  },
+  {
+    "name": "d",
+    "full-name": "D",
+    "server-name": "serve-d",
+    "server-url": "https://github.com/pure-d/serve-d",
+    "installation-url": "https://github.com/pure-d/serve-d#installation",
+    "debugger": "Yes"
   },
   {
     "name": "dhall",
@@ -171,12 +179,29 @@
     "debugger": "Not available"
   },
   {
+    "name": "gettext",
+    "full-name": "gettext",
+    "server-name": "po-language-server",
+    "server-url": "https://github.com/JulienPalard/po-language-server",
+    "installation-url": "https://github.com/JulienPalard/po-language-server",
+    "debugger": "Not available"
+  },
+  {
     "name": "gopls",
     "full-name": "Go",
     "server-name": "gopls",
     "server-url": "https://github.com/golang/tools/tree/master/gopls",
     "installation-url": "https://github.com/golang/tools/tree/master/gopls#installation",
     "debugger": "Yes"
+  },
+  {
+    "name": "grammarly",
+    "full-name": "Grammarly",
+    "server-name": "unofficial-grammarly-language-server-2",
+    "server-url": "https://github.com/emacs-grammarly/unofficial-grammarly-language-server",
+    "installation-url": "https://github.com/emacs-grammarly/unofficial-grammarly-language-server",
+    "installation": "npm i -g unofficial-grammarly-language-server-2",
+    "debugger": "Not available"
   },
   {
     "name": "groovy",
@@ -230,7 +255,7 @@
   },
   {
     "name": "deno",
-    "full-name": "Deno",
+    "full-name": "Javascript/Typescript (deno)",
     "server-name": "deno lsp",
     "server-url": "https://deno.land/#installation",
     "debugger": "Yes (Chrome)"
@@ -285,6 +310,14 @@
     "installation-url": "https://luarocks.org/modules/alloyed/lua-lsp",
     "server-url": "https://github.com/Alloyed/lua-lsp",
     "installation": "luarocks install --server=https://luarocks.org/dev lua-lsp --local",
+    "debugger": "Not available"
+  },
+  {
+    "name": "markdown",
+    "full-name": "Markdown",
+    "server-name": "unified-language-server",
+    "server-url": "https://github.com/unifiedjs/unified-language-server",
+    "installation": "npm i -g unified-language-server",
     "debugger": "Not available"
   },
   {
@@ -392,23 +425,31 @@
   },
   {
     "name": "jedi",
-    "full-name": "Python(Jedi-language-server)",
+    "full-name": "Python (Jedi-language-server)",
     "server-name": "jedi",
     "server-url": "https://github.com/pappasam/jedi-language-server",
     "installation-url": "https://github.com/fredcamps/lsp-jedi",
     "debugger": "Not available"
   },
   {
-    "name": "pyls",
+    "name": "pylsp",
     "full-name": "Python",
+    "server-name": "pylsp",
+    "server-url": "https://github.com/python-lsp/python-lsp-server",
+    "installation": "pip install 'python-lsp-server[all]'",
+    "debugger": "Yes"
+  },
+  {
+    "name": "pyls",
+    "full-name": "Python (deprecated Palantir version)",
     "server-name": "pyls",
     "server-url": "https://github.com/palantir/python-language-server",
-    "installation": "pip install ‘python-language-server[all]’",
+    "installation": "pip install 'python-language-server[all]'",
     "debugger": "Yes"
   },
   {
     "name": "pyright",
-    "full-name": "Python(Pyright)",
+    "full-name": "Python (Pyright)",
     "server-name": "pyright-langserver",
     "server-url": "https://github.com/microsoft/pyright",
     "client-name": "lsp-pyright",
@@ -418,7 +459,7 @@
   },
   {
     "name": "python-ms",
-    "full-name": "Python(Microsoft)",
+    "full-name": "Python (Microsoft)",
     "server-name": "Microsoft Python Language Server",
     "server-url": "https://github.com/Microsoft/python-language-server",
     "client-name": "lsp-python-ms",
@@ -526,6 +567,14 @@
     "debugger": "Not available"
   },
   {
+    "name": "svlangserver",
+    "full-name": "Verilog/SystemVerilog",
+    "server-name": "svlangserver",
+    "server-url": "https://github.com/imc-trading/svlangserver",
+    "installation-url": "https://github.com/imc-trading/svlangserver#installation",
+    "debugger": "Not available"
+  },
+  {
     "name": "terraform",
     "full-name": "Terraform",
     "server-name": "terraform-lsp",
@@ -617,6 +666,14 @@
     "server-url": "https://github.com/redhat-developer/yaml-language-server",
     "installation": "npm install -g yaml-language-server",
     "lsp-install-server": "yamlls",
+    "debugger": "Not available"
+  },
+  {
+    "name": "zig",
+    "full-name": "Zig",
+    "server-name": "zls",
+    "server-url": "https://github.com/zigtools/zls",
+    "installation-url": "https://github.com/zigtools/zls#installation",
     "debugger": "Not available"
   }
 ]

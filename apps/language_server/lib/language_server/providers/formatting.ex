@@ -3,10 +3,18 @@ defmodule ElixirLS.LanguageServer.Providers.Formatting do
   alias ElixirLS.LanguageServer.SourceFile
 
   def format(%SourceFile{} = source_file, uri, project_dir) do
+    mix_file = "file://" <> project_dir <> "/mix.exs"
+
+    subdirectories =
+      case SourceFile.formatter_opts(mix_file) do
+        {:ok, opts} -> Keyword.get(opts, :subdirectories, [])
+        _ -> []
+      end
+
     if can_format?(uri, project_dir) do
       case SourceFile.formatter_opts(uri) do
         {:ok, opts} ->
-          if should_format?(uri, project_dir, opts[:inputs]) do
+          if should_format?(uri, project_dir, opts[:inputs], subdirectories) do
             formatted = IO.iodata_to_binary([Code.format_string!(source_file.text, opts), ?\n])
 
             response =
@@ -45,7 +53,8 @@ defmodule ElixirLS.LanguageServer.Providers.Formatting do
 
   defp can_format?(_uri, _project_dir), do: false
 
-  def should_format?(file_uri, project_dir, inputs) when is_list(inputs) do
+  def should_format?(file_uri, project_dir, inputs, subdirectories)
+      when is_list(inputs) do
     file_path = file_uri |> SourceFile.abs_path_from_uri()
 
     inputs
@@ -53,7 +62,16 @@ defmodule ElixirLS.LanguageServer.Providers.Formatting do
       [
         Path.join([project_dir, glob]),
         Path.join([project_dir, "apps", "*", glob])
-      ]
+      ] ++
+        Enum.flat_map(
+          subdirectories,
+          fn s ->
+            [
+              Path.join([project_dir, s, glob]),
+              Path.join([project_dir, "apps", "*", s, glob])
+            ]
+          end
+        )
     end)
     |> Stream.flat_map(&Path.wildcard(&1, match_dot: true))
     |> Enum.any?(&(file_path == &1))

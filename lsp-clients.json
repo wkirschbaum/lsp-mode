@@ -260,6 +260,14 @@
     "debugger": "Not available"
   },
   {
+    "name": "glsl",
+    "full-name": "GLSL",
+    "server-name": "glsl",
+    "server-url": "https://github.com/svenstaro/glsl-language-server",
+    "installation-url": "https://github.com/svenstaro/glsl-language-server",
+    "debugger": "Not available"
+  },
+  {
     "name": "gopls",
     "full-name": "Go",
     "server-name": "gopls",
@@ -431,8 +439,9 @@
     "full-name": "GE Smallworld Magik",
     "server-name": "magik-language-server",
     "server-url": "https://github.com/StevenLooman/magik-tools",
-    "installation": "https://github.com/StevenLooman/magik-tools/releases",
-    "debugger": "Not implemented"
+    "installation": "Automatic by lsp-mode with `lsp-install-server`",
+    "lsp-install-server": "magik-ls",
+    "debugger": "Yes"
   },
   {
     "name": "markdown",
@@ -448,6 +457,14 @@
     "server-name": "marksman",
     "server-url": "https://github.com/artempyanykh/marksman",
     "installation-url": "https://github.com/artempyanykh/marksman",
+    "debugger": "Not available"
+  },
+  {
+    "name": "millet",
+    "full-name": "Standard ML (Millet)",
+    "server-name": "millet",
+    "server-url": "https://github.com/azdavis/millet",
+    "installation-url": "https://github.com/azdavis/millet",
     "debugger": "Not available"
   },
   {
@@ -699,6 +716,22 @@
     "debugger": "Yes"
   },
   {
+    "name": "ruby-lsp",
+    "full-name": "Ruby (ruby-lsp)",
+    "server-name": "ruby-lsp",
+    "server-url": "https://github.com/Shopify/ruby-lsp",
+    "installation": "gem install ruby-lsp",
+    "debugger": "Not available"
+  },
+  {
+    "name": "ruff-lsp",
+    "full-name": "Python",
+    "server-name": "ruff-lsp",
+    "server-url": "https://github.com/charliermarsh/ruff-lsp",
+    "installation": "pip install ruff-lsp",
+    "debugger": "Not available"
+  },
+  {
     "name": "rust-analyzer",
     "common-group-name": "rust",
     "full-name": "Rust",
@@ -717,6 +750,14 @@
     "debugger": "Yes"
   },
   {
+    "name": "semgrep",
+    "full-name": "Semgrep",
+    "server-name": "semgrep-ls",
+    "server-url": "https://github.com/returntocorp/semgrep",
+    "installation": "pip install semgrep --user",
+    "debugger": "Not available"
+  },
+  {
     "name": "serenata",
     "common-group-name": "php",
     "full-name": "PHP (Serenata)",
@@ -724,6 +765,15 @@
     "server-url": "https://gitlab.com/Serenata/Serenata",
     "installation-url": "https://gitlab.com/Serenata/Serenata/-/releases",
     "debugger": "Yes"
+  },
+  {
+    "name": "shader",
+    "common-group-name": "ShaderLab",
+    "full-name": "ShaderLab",
+    "server-name": "shader-ls",
+    "server-url": "https://github.com/shader-ls/shader-language-server",
+    "installation-url": "https://github.com/shader-ls/shader-language-server/releases",
+    "debugger": "Not available"
   },
   {
     "name": "solargraph",
@@ -798,6 +848,15 @@
     "server-name": "terraform-ls",
     "server-url": "https://github.com/hashicorp/terraform-ls",
     "installation-url": "https://github.com/hashicorp/terraform-ls",
+    "debugger": "Not available"
+  },
+  {
+    "name": "tilt",
+    "full-name": "Tilt LSP",
+    "server-name": "tilt",
+    "installation": "To be used with tilt-mode available in https://github.com/Konubinix/tilt-mode",
+    "server-url": "https://docs.tilt.dev/cli/tilt_lsp.html",
+    "installation-url": "https://docs.tilt.dev/",
     "debugger": "Not available"
   },
   {
@@ -907,7 +966,7 @@
     "server-name": "volar-language-server",
     "server-url": "https://github.com/johnsoncodehk/volar",
     "installation": "npm install -g @volar/vue-language-server",
-    "lsp-install-server": "volar-api",
+    "lsp-install-server": "vue-semantic-server",
     "debugger": "Not available"
   },
   {

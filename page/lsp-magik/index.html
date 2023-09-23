@@ -1152,6 +1152,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-awk/" class="md-nav__link">
+        AWK
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-bash/" class="md-nav__link">
         Bash
       </a>
@@ -1404,7 +1418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-erlang/" class="md-nav__link">
+      <a href="../lsp-erlang.md" class="md-nav__link">
         Erlang
       </a>
     </li>
@@ -1968,6 +1982,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-move/" class="md-nav__link">
+        Move
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-mdx/" class="md-nav__link">
+        MDX
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="https://emacs-lsp.github.io/lsp-mssql" class="md-nav__link">
         MSSQL
       </a>
@@ -2334,6 +2376,20 @@
     <li class="md-nav__item">
       <a href="../lsp-racket-language-server/" class="md-nav__link">
         Racket (Theia)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-rubocop/" class="md-nav__link">
+        Ruby (RuboCop)
       </a>
     </li>
   
@@ -3078,6 +3134,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/crystal-guide/" class="md-nav__link">
+        Configuring Emacs as a Crystal IDE
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -3425,7 +3495,7 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
 <hr />
 <h3 id="lsp-magik-java-path"><code>lsp-magik-java-path</code><a class="headerlink" href="#lsp-magik-java-path" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
-<p><em>Default:</em> <code>java</code></p>
+<p><em>Default:</em> <code>(closure (t) nil (cond ((eq system-type 'windows-nt) (or (lsp-resolve-value (executable-find (expand-file-name bin/java (getenv JAVA_HOME)))) (lsp-resolve-value (executable-find java)))) (t java)))</code></p>
 <p>Path of the java executable.</p>
 <hr />
 <h3 id="lsp-magik-lint-override-config-file"><code>lsp-magik-lint-override-config-file</code><a class="headerlink" href="#lsp-magik-lint-override-config-file" title="Permanent link">#</a></h3>
@@ -3471,7 +3541,7 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 11, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2023</span>
       
     
   </small>

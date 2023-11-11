@@ -869,6 +869,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-auto-register-remote-clients" class="md-nav__link">
+    lsp-auto-register-remote-clients
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-auto-select-workspace" class="md-nav__link">
     lsp-auto-select-workspace
   </a>
@@ -2183,7 +2190,7 @@
   
     <li class="md-nav__item">
       <a href="../../lsp-eslint/" class="md-nav__link">
-        Eslint
+        ESLint
       </a>
     </li>
   
@@ -3979,6 +3986,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-auto-register-remote-clients" class="md-nav__link">
+    lsp-auto-register-remote-clients
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-auto-select-workspace" class="md-nav__link">
     lsp-auto-select-workspace
   </a>
@@ -4742,6 +4756,11 @@ Do <em>not</em> use this setting unless you are familiar with <code>lsp-mode</co
 internals and you are sure that all of your projects are
 following <code>projectile</code>/<code>project.el</code> conventions.</p>
 <hr />
+<h3 id="lsp-auto-register-remote-clients"><code>lsp-auto-register-remote-clients</code><a class="headerlink" href="#lsp-auto-register-remote-clients" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>When non-nil register remote when registering the local one.</p>
+<hr />
 <h3 id="lsp-auto-select-workspace"><code>lsp-auto-select-workspace</code><a class="headerlink" href="#lsp-auto-select-workspace" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
@@ -4780,7 +4799,7 @@ before saving a document.</p>
 <hr />
 <h3 id="lsp-client-packages"><code>lsp-client-packages</code><a class="headerlink" href="#lsp-client-packages" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat symbol)</code></p>
-<p><em>Default:</em> <code>(ccls lsp-actionscript lsp-ada lsp-angular lsp-ansible lsp-awk lsp-astro lsp-bash lsp-beancount lsp-clangd lsp-clojure lsp-cmake lsp-credo lsp-crystal lsp-csharp lsp-css lsp-d lsp-dart lsp-dhall lsp-docker lsp-dockerfile lsp-elm lsp-elixir lsp-emmet lsp-erlang lsp-eslint lsp-fortran lsp-fsharp lsp-gdscript lsp-go lsp-gleam lsp-glsl lsp-graphql lsp-hack lsp-grammarly lsp-groovy lsp-haskell lsp-haxe lsp-idris lsp-java lsp-javascript lsp-json lsp-kotlin lsp-latex lsp-ltex lsp-lua lsp-markdown lsp-marksman lsp-mdx lsp-mint lsp-move lsp-nginx lsp-nim lsp-nix lsp-magik lsp-metals lsp-mssql lsp-ocaml lsp-openscad lsp-pascal lsp-perl lsp-perlnavigator lsp-pls lsp-php lsp-pwsh lsp-pyls lsp-pylsp lsp-pyright lsp-python-ms lsp-purescript lsp-r lsp-racket lsp-remark lsp-ruff-lsp lsp-rf lsp-rubocop lsp-rust lsp-semgrep lsp-shader lsp-solargraph lsp-sorbet lsp-sourcekit lsp-sonarlint lsp-tailwindcss lsp-tex lsp-terraform lsp-toml lsp-ttcn3 lsp-typeprof lsp-v lsp-vala lsp-verilog lsp-vetur lsp-volar lsp-vhdl lsp-vimscript lsp-xml lsp-yaml lsp-ruby-lsp lsp-ruby-syntax-tree lsp-sqls lsp-svelte lsp-steep lsp-tilt lsp-zig lsp-jq)</code></p>
+<p><em>Default:</em> <code>(ccls lsp-actionscript lsp-ada lsp-angular lsp-ansible lsp-awk lsp-astro lsp-bash lsp-beancount lsp-clangd lsp-clojure lsp-cmake lsp-credo lsp-crystal lsp-csharp lsp-css lsp-d lsp-dart lsp-dhall lsp-docker lsp-dockerfile lsp-elm lsp-elixir lsp-emmet lsp-erlang lsp-eslint lsp-fortran lsp-fsharp lsp-gdscript lsp-go lsp-gleam lsp-glsl lsp-graphql lsp-hack lsp-grammarly lsp-groovy lsp-haskell lsp-haxe lsp-idris lsp-java lsp-javascript lsp-json lsp-kotlin lsp-latex lsp-ltex lsp-lua lsp-markdown lsp-marksman lsp-mdx lsp-mint lsp-move lsp-nginx lsp-nim lsp-nix lsp-magik lsp-mojo lsp-metals lsp-mssql lsp-ocaml lsp-openscad lsp-pascal lsp-perl lsp-perlnavigator lsp-pls lsp-php lsp-pwsh lsp-pyls lsp-pylsp lsp-pyright lsp-python-ms lsp-purescript lsp-r lsp-racket lsp-remark lsp-ruff-lsp lsp-rf lsp-rubocop lsp-rust lsp-semgrep lsp-shader lsp-solargraph lsp-sorbet lsp-sourcekit lsp-sonarlint lsp-tailwindcss lsp-tex lsp-terraform lsp-toml lsp-ttcn3 lsp-typeprof lsp-v lsp-vala lsp-verilog lsp-vetur lsp-volar lsp-vhdl lsp-vimscript lsp-xml lsp-yaml lsp-ruby-lsp lsp-ruby-syntax-tree lsp-solidity lsp-sqls lsp-svelte lsp-steep lsp-tilt lsp-zig lsp-jq)</code></p>
 <p>List of the clients to be automatically required.</p>
 <hr />
 <h3 id="lsp-completion-default-behaviour"><code>lsp-completion-default-behaviour</code><a class="headerlink" href="#lsp-completion-default-behaviour" title="Permanent link">#</a></h3>
@@ -4985,7 +5004,7 @@ following <code>projectile</code>/<code>project.el</code> conventions.</p>
 <hr />
 <h3 id="lsp-gunzip-script"><code>lsp-gunzip-script</code><a class="headerlink" href="#lsp-gunzip-script" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
-<p><em>Default:</em> <code>(closure (view-inhibit-help-message lsp-help-mode-abbrev-table lsp-help-mode-syntax-table eldoc-documentation-default cl-struct-lsp--log-entry-tags cl-struct-lsp-session-tags cl-struct-lsp--workspace-tags cl-struct-lsp--registered-capability-tags lsp-mode-menu cl-struct-lsp--folding-range-tags cl-struct-lsp-watch-tags cl-struct-lsp--client-tags lsp--log-lines company-minimum-prefix-length dap-ui-menu-items dap-auto-configure-mode yas-also-auto-indent-first-line yas-wrap-around-region yas-indent-line yas-inhibit-overlay-modification-protection t) nil (cond ((executable-find gzip) lsp-ext-gunzip-script) (t nil)))</code></p>
+<p><em>Default:</em> <code>(closure (tramp-ssh-controlmaster-options tramp-use-ssh-controlmaster-options view-inhibit-help-message lsp-help-mode-abbrev-table lsp-help-mode-syntax-table eldoc-documentation-default cl-struct-lsp--log-entry-tags cl-struct-lsp-session-tags cl-struct-lsp--workspace-tags cl-struct-lsp--registered-capability-tags lsp-mode-menu cl-struct-lsp--folding-range-tags cl-struct-lsp-watch-tags cl-struct-lsp--client-tags lsp--log-lines company-minimum-prefix-length dap-ui-menu-items dap-auto-configure-mode yas-also-auto-indent-first-line yas-wrap-around-region yas-indent-line yas-inhibit-overlay-modification-protection t) nil (cond ((executable-find gzip) lsp-ext-gunzip-script) (t nil)))</code></p>
 <p>The script to decompress a gzipped file.
 Should be a format string with one argument for the file to be decompressed
 in place.</p>
@@ -5219,7 +5238,7 @@ namespace SymbolKind.</p>
 <hr />
 <h3 id="lsp-tar-script"><code>lsp-tar-script</code><a class="headerlink" href="#lsp-tar-script" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
-<p><em>Default:</em> <code>(closure (view-inhibit-help-message lsp-help-mode-abbrev-table lsp-help-mode-syntax-table eldoc-documentation-default cl-struct-lsp--log-entry-tags cl-struct-lsp-session-tags cl-struct-lsp--workspace-tags cl-struct-lsp--registered-capability-tags lsp-mode-menu cl-struct-lsp--folding-range-tags cl-struct-lsp-watch-tags cl-struct-lsp--client-tags lsp--log-lines company-minimum-prefix-length dap-ui-menu-items dap-auto-configure-mode yas-also-auto-indent-first-line yas-wrap-around-region yas-indent-line yas-inhibit-overlay-modification-protection t) nil (cond ((executable-find tar) lsp-ext-tar-script) (t nil)))</code></p>
+<p><em>Default:</em> <code>(closure (tramp-ssh-controlmaster-options tramp-use-ssh-controlmaster-options view-inhibit-help-message lsp-help-mode-abbrev-table lsp-help-mode-syntax-table eldoc-documentation-default cl-struct-lsp--log-entry-tags cl-struct-lsp-session-tags cl-struct-lsp--workspace-tags cl-struct-lsp--registered-capability-tags lsp-mode-menu cl-struct-lsp--folding-range-tags cl-struct-lsp-watch-tags cl-struct-lsp--client-tags lsp--log-lines company-minimum-prefix-length dap-ui-menu-items dap-auto-configure-mode yas-also-auto-indent-first-line yas-wrap-around-region yas-indent-line yas-inhibit-overlay-modification-protection t) nil (cond ((executable-find tar) lsp-ext-tar-script) (t nil)))</code></p>
 <p>The script to decompress a .tar.gz file.
 Should be a format string with one argument for the file to be decompressed
 in place.</p>
@@ -5246,7 +5265,7 @@ in place.</p>
 <hr />
 <h3 id="lsp-unzip-script"><code>lsp-unzip-script</code><a class="headerlink" href="#lsp-unzip-script" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
-<p><em>Default:</em> <code>(closure (view-inhibit-help-message lsp-help-mode-abbrev-table lsp-help-mode-syntax-table eldoc-documentation-default cl-struct-lsp--log-entry-tags cl-struct-lsp-session-tags cl-struct-lsp--workspace-tags cl-struct-lsp--registered-capability-tags lsp-mode-menu cl-struct-lsp--folding-range-tags cl-struct-lsp-watch-tags cl-struct-lsp--client-tags lsp--log-lines company-minimum-prefix-length dap-ui-menu-items dap-auto-configure-mode yas-also-auto-indent-first-line yas-wrap-around-region yas-indent-line yas-inhibit-overlay-modification-protection t) nil (cond ((executable-find unzip) lsp-ext-unzip-script) ((executable-find powershell) lsp-ext-pwsh-script) (t nil)))</code></p>
+<p><em>Default:</em> <code>(closure (tramp-ssh-controlmaster-options tramp-use-ssh-controlmaster-options view-inhibit-help-message lsp-help-mode-abbrev-table lsp-help-mode-syntax-table eldoc-documentation-default cl-struct-lsp--log-entry-tags cl-struct-lsp-session-tags cl-struct-lsp--workspace-tags cl-struct-lsp--registered-capability-tags lsp-mode-menu cl-struct-lsp--folding-range-tags cl-struct-lsp-watch-tags cl-struct-lsp--client-tags lsp--log-lines company-minimum-prefix-length dap-ui-menu-items dap-auto-configure-mode yas-also-auto-indent-first-line yas-wrap-around-region yas-indent-line yas-inhibit-overlay-modification-protection t) nil (cond ((executable-find unzip) lsp-ext-unzip-script) ((executable-find powershell) lsp-ext-pwsh-script) (t nil)))</code></p>
 <p>The script to unzip.</p>
 <hr />
 <h3 id="lsp-verify-signature"><code>lsp-verify-signature</code><a class="headerlink" href="#lsp-verify-signature" title="Permanent link">#</a></h3>
@@ -5283,7 +5302,7 @@ The hook will receive two parameters list of added and removed folders.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 24, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 11, 2023</span>
       
     
   </small>

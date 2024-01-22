@@ -1138,8 +1138,36 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-asm/" class="md-nav__link">
+        Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-astro/" class="md-nav__link">
         Astro
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-autotools/" class="md-nav__link">
+        Autotools
       </a>
     </li>
   
@@ -1308,6 +1336,20 @@
     <li class="md-nav__item">
       <a href="../lsp-css/" class="md-nav__link">
         CSS/LessCSS/SASS/SCSS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-cypher/" class="md-nav__link">
+        Cypher
       </a>
     </li>
   
@@ -1712,6 +1754,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-jsonnet/" class="md-nav__link">
+        Jsonnet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-julia/" class="md-nav__link">
         Julia
       </a>
@@ -1895,6 +1951,20 @@
           <li class="md-nav__item">
   <a href="#lsp-kotlin-trace-server" class="md-nav__link">
     lsp-kotlin-trace-server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-workspace-cache-dir" class="md-nav__link">
+    lsp-kotlin-workspace-cache-dir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-workspace-dir" class="md-nav__link">
+    lsp-kotlin-workspace-dir
   </a>
   
 </li>
@@ -2087,7 +2157,21 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix/" class="md-nav__link">
+      <a href="../lsp-nix-nixd.md" class="md-nav__link">
+        Nix (nixd-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-nix-rnix.md" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2857,6 +2941,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-wgsl.md" class="md-nav__link">
+        wgsl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-xml/" class="md-nav__link">
         XML
       </a>
@@ -3484,6 +3582,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-workspace-cache-dir" class="md-nav__link">
+    lsp-kotlin-workspace-cache-dir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-kotlin-workspace-dir" class="md-nav__link">
+    lsp-kotlin-workspace-dir
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3595,17 +3707,20 @@ using the <code>kls</code>-scheme.</p>
 <h3 id="lsp-kotlin-inlayhints-enable-chainedhints"><code>lsp-kotlin-inlayhints-enable-chainedhints</code><a class="headerlink" href="#lsp-kotlin-inlayhints-enable-chainedhints" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Specifies whether to enable chained hints or not. Requires lsp-inlay-hints-mode.</p>
+<p>Specifies whether to enable chained hints or not.
+Requires lsp-inlay-hints-mode.</p>
 <hr />
 <h3 id="lsp-kotlin-inlayhints-enable-parameterhints"><code>lsp-kotlin-inlayhints-enable-parameterhints</code><a class="headerlink" href="#lsp-kotlin-inlayhints-enable-parameterhints" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Specifies whether to enable parameter hints or not. Requires lsp-inlay-hints-mode.</p>
+<p>Specifies whether to enable parameter hints or not.
+Requires lsp-inlay-hints-mode.</p>
 <hr />
 <h3 id="lsp-kotlin-inlayhints-enable-typehints"><code>lsp-kotlin-inlayhints-enable-typehints</code><a class="headerlink" href="#lsp-kotlin-inlayhints-enable-typehints" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Specifies whether to enable type hints or not. Requires lsp-inlay-hints-mode.</p>
+<p>Specifies whether to enable type hints or not.
+Requires lsp-inlay-hints-mode.</p>
 <hr />
 <h3 id="lsp-kotlin-linting-debounce-time"><code>lsp-kotlin-linting-debounce-time</code><a class="headerlink" href="#lsp-kotlin-linting-debounce-time" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>number</code></p>
@@ -3616,12 +3731,14 @@ Lower to increase responsiveness at the cost of possible stability issues.</p>
 <h3 id="lsp-kotlin-ondisk-cache-enabled"><code>lsp-kotlin-ondisk-cache-enabled</code><a class="headerlink" href="#lsp-kotlin-ondisk-cache-enabled" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>Specifies whether to enable ondisk cache or not. If nil, in-memory cache will be used.</p>
+<p>Specifies whether to enable ondisk cache or not.  If nil, in-memory cache
+will be used.</p>
 <hr />
 <h3 id="lsp-kotlin-ondisk-cache-path"><code>lsp-kotlin-ondisk-cache-path</code><a class="headerlink" href="#lsp-kotlin-ondisk-cache-path" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>Path to the ondisk cache if used. If lsp-kotlin-ondisk-cache-enabled is t, but path is nil, then the project root is used as a default.</p>
+<p>Path to the ondisk cache if used. If lsp-kotlin-ondisk-cache-enabled is t,
+but path is nil, then the project root is used as a default.</p>
 <hr />
 <h3 id="lsp-kotlin-server-download-url"><code>lsp-kotlin-server-download-url</code><a class="headerlink" href="#lsp-kotlin-server-download-url" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
@@ -3633,6 +3750,16 @@ Lower to increase responsiveness at the cost of possible stability issues.</p>
 <p><em>Default:</em> <code>off</code></p>
 <p>Traces the communication between VSCode and the Kotlin language server.</p>
 <hr />
+<h3 id="lsp-kotlin-workspace-cache-dir"><code>lsp-kotlin-workspace-cache-dir</code><a class="headerlink" href="#lsp-kotlin-workspace-cache-dir" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>directory</code></p>
+<p><em>Default:</em> <code>~/.emacs.d/workspace/.cache/</code></p>
+<p>LSP kotlin workspace cache directory.</p>
+<hr />
+<h3 id="lsp-kotlin-workspace-dir"><code>lsp-kotlin-workspace-dir</code><a class="headerlink" href="#lsp-kotlin-workspace-dir" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>directory</code></p>
+<p><em>Default:</em> <code>~/.emacs.d/workspace/</code></p>
+<p>LSP kotlin workspace directory.</p>
+<hr />
 
 <!-- Source file information -->
 
@@ -3641,7 +3768,7 @@ Lower to increase responsiveness at the cost of possible stability issues.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 11, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 22, 2024</span>
       
     
   </small>

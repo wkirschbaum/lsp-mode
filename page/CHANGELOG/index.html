@@ -1136,8 +1136,36 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-asm/" class="md-nav__link">
+        Assembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-astro/" class="md-nav__link">
         Astro
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-autotools/" class="md-nav__link">
+        Autotools
       </a>
     </li>
   
@@ -1306,6 +1334,20 @@
     <li class="md-nav__item">
       <a href="../lsp-css/" class="md-nav__link">
         CSS/LessCSS/SASS/SCSS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-cypher/" class="md-nav__link">
+        Cypher
       </a>
     </li>
   
@@ -1710,6 +1752,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-jsonnet/" class="md-nav__link">
+        Jsonnet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-julia/" class="md-nav__link">
         Julia
       </a>
@@ -1906,7 +1962,21 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix/" class="md-nav__link">
+      <a href="../lsp-nix-nixd.md" class="md-nav__link">
+        Nix (nixd-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-nix-rnix.md" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2676,6 +2746,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-wgsl.md" class="md-nav__link">
+        wgsl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-xml/" class="md-nav__link">
         XML
       </a>
@@ -3429,13 +3513,17 @@
 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
 <h2 id="unreleased-801">Unreleased 8.0.1<a class="headerlink" href="#unreleased-801" title="Permanent link">#</a></h2>
 <ul>
+<li>Add support for installing lsp dependencies via Cargo.</li>
 <li>Fix tramp support issues (see
     <a href="https://github.com/emacs-lsp/lsp-mode/pull/4204">#4204</a>)</li>
+<li>Add Cypher support.</li>
 <li>Add Mojo 🔥 support</li>
 <li>Add lsp-solidity, using the implementation from NomicFoundation</li>
 <li>Change rust-analyzer base URL to be
     github.com/rust-lang/rust-analyzer, rather than
     rust-analyzer/rust-analyzer.</li>
+<li>Add support for wgsl using
+    <a href="https://github.com/wgsl-analyzer/wgsl-analyzer">wgsl-analyzer</a></li>
 <li>Add <a href="https://github.com/wader/jq-lsp">jq-lsp</a></li>
 <li>Add architecture triples for
     <a href="https://github.com/WhatsApp/erlang-language-platform">erlang-language-platform</a>
@@ -3455,7 +3543,8 @@
 <li>terraform-ls now supports prefill required fields and the ability to
     validate on save.</li>
 <li>Ignore <code>.terraform</code> and <code>.terragrunt-cache</code> directories</li>
-<li><code>lsp-bash</code> now supports <code>bash-ts-mode</code> and <code>ebuild-mode</code></li>
+<li><code>lsp-bash</code> now supports <code>bash-ts-mode</code>, <code>ebuild-mode</code> and
+    <code>envrc-file-mode</code></li>
 <li><code>lsp-ruby-syntax-tree</code>, <code>lsp-solargraph</code>, <code>lsp-sorbet</code>, <code>lsp-steep</code>,
     and <code>lsp-typeprof</code> now support <code>ruby-ts-mode</code></li>
 <li>Drop support for emacs 26.1 and 26.2</li>
@@ -3571,6 +3660,13 @@
 <li>Add Move language server support.</li>
 <li>Add mdx support using
     <a href="https://github.com/mdx-js/mdx-analyzer/tree/main/packages/language-server">mdx-language-server</a></li>
+<li>Add golangci-lint add-on client using
+    <a href="https://github.com/nametake/golangci-lint-langserver">golangci-lint-langserver</a></li>
+<li>Add buf/protobuf support via
+    <a href="https://github.com/bufbuild/buf-language-server">bufls</a></li>
+<li>Add Assembly Language support.</li>
+<li>Add Autotools support</li>
+<li>Add Jsonnet support</li>
 </ul>
 <h2 id="release-800">Release 8.0.0<a class="headerlink" href="#release-800" title="Permanent link">#</a></h2>
 <ul>
@@ -3975,7 +4071,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 11, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 22, 2024</span>
       
     
   </small>

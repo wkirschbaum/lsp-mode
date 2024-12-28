@@ -1222,6 +1222,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-buf/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf CLI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-bufls/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf Language Server)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-camel/" class="md-nav__link">
         Camel
       </a>
@@ -1266,6 +1294,20 @@
     <li class="md-nav__item">
       <a href="../lsp-csharp-omnisharp/" class="md-nav__link">
         C# (omnisharp-roslyn)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-csharp-roslyn/" class="md-nav__link">
+        C# (csharp-roslyn)
       </a>
     </li>
   
@@ -1849,8 +1891,36 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-futhark/" class="md-nav__link">
+        Futhark
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-gdscript/" class="md-nav__link">
         GDScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-copilot/" class="md-nav__link">
+        Github Copilot
       </a>
     </li>
   
@@ -2227,6 +2297,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-fennel/" class="md-nav__link">
+        Fennel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-magik/" class="md-nav__link">
         Magik
       </a>
@@ -2325,6 +2409,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-nextflow/" class="md-nav__link">
+        Nextflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-nginx/" class="md-nav__link">
         Nginx
       </a>
@@ -2353,7 +2451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-nixd.md" class="md-nav__link">
+      <a href="../lsp-nix-nixd/" class="md-nav__link">
         Nix (nixd-lsp)
       </a>
     </li>
@@ -2367,7 +2465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-rnix.md" class="md-nav__link">
+      <a href="../lsp-nix-rnix/" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2661,7 +2759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-ruff-lsp/" class="md-nav__link">
+      <a href="../lsp-ruff/" class="md-nav__link">
         Python (Ruff)
       </a>
     </li>
@@ -3083,6 +3181,20 @@
     <li class="md-nav__item">
       <a href="../lsp-ttcn3/" class="md-nav__link">
         TTCN3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-typespec/" class="md-nav__link">
+        TypeSpec
       </a>
     </li>
   
@@ -4087,7 +4199,7 @@ be shown.</p>
 <hr />
 <h3 id="lsp-eslint-download-url"><code>lsp-eslint-download-url</code><a class="headerlink" href="#lsp-eslint-download-url" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
-<p><em>Default:</em> <code>https://github.com/emacs-lsp/lsp-server-binaries/blob/master/dbaeumer.vscode-eslint-2.2.2.vsix?raw=true</code></p>
+<p><em>Default:</em> <code>https://github.com/emacs-lsp/lsp-server-binaries/blob/master/dbaeumer.vscode-eslint-3.0.10.vsix?raw=true</code></p>
 <p>ESLint language server download url.</p>
 <hr />
 <h3 id="lsp-eslint-enable"><code>lsp-eslint-enable</code><a class="headerlink" href="#lsp-eslint-enable" title="Permanent link">#</a></h3>
@@ -4230,14 +4342,18 @@ from running.</p>
 <p>Controls whether a warning should be emitted when a file is ignored.</p>
 <hr />
 <h3 id="lsp-eslint-working-directories"><code>lsp-eslint-working-directories</code><a class="headerlink" href="#lsp-eslint-working-directories" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>lsp-string-vector</code></p>
+<p><em>Type:</em> <code>(lsp-repeatable-vector (choice string (plist mode string)))</code></p>
 <p><em>Default:</em> <code>[]</code></p>
-<p>A vector of working directory names to use. Can be a pattern, an absolute path
-or a path relative to the workspace. Examples:
+<p>A vector of working directory names to use.
+Can be a pattern, an absolute path, a path relative to the workspace,
+or a supported mode such as "auto" or "location".
+Examples:
  - "/home/user/abc/"
  - "abc/"
  - (directory "abc") which is equivalent to "abc" above
  - (pattern "abc/*")
+ - (mode "auto")
+ - (mode "location")
 Note that the home directory reference ~/ is not currently supported, use
 /home/[user]/ instead.</p>
 <hr />
@@ -4249,7 +4365,7 @@ Note that the home directory reference ~/ is not currently supported, use
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 19, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 28, 2024</span>
       
     
   </small>

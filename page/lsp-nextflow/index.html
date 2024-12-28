@@ -12,14 +12,14 @@
         <meta name="author" content="ercdll1337@gmail.com">
       
       
-        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-ruff-lsp/">
+        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-nextflow/">
       
       <link rel="icon" href="../../examples/logo-mini.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.0.0">
     
     
       
-        <title>Python (Ruff) - LSP Mode - LSP support for Emacs</title>
+        <title>Nextflow - LSP Mode - LSP support for Emacs</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python" class="md-skip">
+        <a href="#nextflow" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Python (Ruff)
+              Nextflow
             
           </span>
         </div>
@@ -1222,6 +1222,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-buf/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf CLI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-bufls/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf Language Server)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-camel/" class="md-nav__link">
         Camel
       </a>
@@ -1266,6 +1294,20 @@
     <li class="md-nav__item">
       <a href="../lsp-csharp-omnisharp/" class="md-nav__link">
         C# (omnisharp-roslyn)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-csharp-roslyn/" class="md-nav__link">
+        C# (csharp-roslyn)
       </a>
     </li>
   
@@ -1558,8 +1600,36 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-futhark/" class="md-nav__link">
+        Futhark
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-gdscript/" class="md-nav__link">
         GDScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-copilot/" class="md-nav__link">
+        Github Copilot
       </a>
     </li>
   
@@ -1936,6 +2006,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-fennel/" class="md-nav__link">
+        Fennel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-magik/" class="md-nav__link">
         Magik
       </a>
@@ -2032,6 +2116,157 @@
               
   
   
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Nextflow
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Nextflow
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugger-not-available" class="md-nav__link">
+    Debugger: Not available
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-configurations" class="md-nav__link">
+    Available configurations
+  </a>
+  
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nextflow-debug" class="md-nav__link">
+    lsp-nextflow-debug
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nextflow-files-exclude" class="md-nav__link">
+    lsp-nextflow-files-exclude
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nextflow-formatting-harshil-alignment" class="md-nav__link">
+    lsp-nextflow-formatting-harshil-alignment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nextflow-java-home" class="md-nav__link">
+    lsp-nextflow-java-home
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nextflow-java-path" class="md-nav__link">
+    lsp-nextflow-java-path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nextflow-server-download-url" class="md-nav__link">
+    lsp-nextflow-server-download-url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nextflow-server-file" class="md-nav__link">
+    lsp-nextflow-server-file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nextflow-suppress-future-warnings" class="md-nav__link">
+    lsp-nextflow-suppress-future-warnings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nextflow-version" class="md-nav__link">
+    lsp-nextflow-version
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
   
     <li class="md-nav__item">
       <a href="../lsp-nginx/" class="md-nav__link">
@@ -2062,7 +2297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-nixd.md" class="md-nav__link">
+      <a href="../lsp-nix-nixd/" class="md-nav__link">
         Nix (nixd-lsp)
       </a>
     </li>
@@ -2076,7 +2311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-rnix.md" class="md-nav__link">
+      <a href="../lsp-nix-rnix/" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2368,148 +2603,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Python (Ruff)
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../lsp-ruff/" class="md-nav__link">
         Python (Ruff)
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
-    Server
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#debugger-not-available" class="md-nav__link">
-    Debugger: Not available
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#available-configurations" class="md-nav__link">
-    Available configurations
-  </a>
-  
-    <nav class="md-nav" aria-label="Available configurations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-advertize-fix-all" class="md-nav__link">
-    lsp-ruff-lsp-advertize-fix-all
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-advertize-organize-imports" class="md-nav__link">
-    lsp-ruff-lsp-advertize-organize-imports
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-import-strategy" class="md-nav__link">
-    lsp-ruff-lsp-import-strategy
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-log-level" class="md-nav__link">
-    lsp-ruff-lsp-log-level
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-python-path" class="md-nav__link">
-    lsp-ruff-lsp-python-path
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-ruff-args" class="md-nav__link">
-    lsp-ruff-lsp-ruff-args
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-ruff-path" class="md-nav__link">
-    lsp-ruff-lsp-ruff-path
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-server-command" class="md-nav__link">
-    lsp-ruff-lsp-server-command
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-show-notifications" class="md-nav__link">
-    lsp-ruff-lsp-show-notifications
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2929,6 +3027,20 @@
     <li class="md-nav__item">
       <a href="../lsp-ttcn3/" class="md-nav__link">
         TTCN3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-typespec/" class="md-nav__link">
+        TypeSpec
       </a>
     </li>
   
@@ -3618,64 +3730,64 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-advertize-fix-all" class="md-nav__link">
-    lsp-ruff-lsp-advertize-fix-all
+  <a href="#lsp-nextflow-debug" class="md-nav__link">
+    lsp-nextflow-debug
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-advertize-organize-imports" class="md-nav__link">
-    lsp-ruff-lsp-advertize-organize-imports
+  <a href="#lsp-nextflow-files-exclude" class="md-nav__link">
+    lsp-nextflow-files-exclude
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-import-strategy" class="md-nav__link">
-    lsp-ruff-lsp-import-strategy
+  <a href="#lsp-nextflow-formatting-harshil-alignment" class="md-nav__link">
+    lsp-nextflow-formatting-harshil-alignment
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-log-level" class="md-nav__link">
-    lsp-ruff-lsp-log-level
+  <a href="#lsp-nextflow-java-home" class="md-nav__link">
+    lsp-nextflow-java-home
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-python-path" class="md-nav__link">
-    lsp-ruff-lsp-python-path
+  <a href="#lsp-nextflow-java-path" class="md-nav__link">
+    lsp-nextflow-java-path
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-ruff-args" class="md-nav__link">
-    lsp-ruff-lsp-ruff-args
+  <a href="#lsp-nextflow-server-download-url" class="md-nav__link">
+    lsp-nextflow-server-download-url
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-ruff-path" class="md-nav__link">
-    lsp-ruff-lsp-ruff-path
+  <a href="#lsp-nextflow-server-file" class="md-nav__link">
+    lsp-nextflow-server-file
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-server-command" class="md-nav__link">
-    lsp-ruff-lsp-server-command
+  <a href="#lsp-nextflow-suppress-future-warnings" class="md-nav__link">
+    lsp-nextflow-suppress-future-warnings
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-ruff-lsp-show-notifications" class="md-nav__link">
-    lsp-ruff-lsp-show-notifications
+  <a href="#lsp-nextflow-version" class="md-nav__link">
+    lsp-nextflow-version
   </a>
   
 </li>
@@ -3721,7 +3833,7 @@
 <!-- Edit button -->
 
 <a
-  href="https://github.com/emacs-lsp/lsp-mode/edit/master/clients/lsp-ruff-lsp.el"
+  href="https://github.com/emacs-lsp/lsp-mode/edit/master/clients/lsp-nextflow.el"
   title="Edit this page"
   class="md-content__button md-icon"
 >
@@ -3740,57 +3852,60 @@
 
 
 <!-- Markdown content -->
-<h1 id="python">Python<a class="headerlink" href="#python" title="Permanent link">#</a></h1>
+<h1 id="nextflow">Nextflow<a class="headerlink" href="#nextflow" title="Permanent link">#</a></h1>
 <h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
-<p>For more information about the LSP server, check <a href="https://github.com/charliermarsh/ruff-lsp">ruff-lsp</a>.</p>
+<p>For more information about the LSP server, check <a href="https://github.com/nextflow-io/language-server">nextflow-language-server</a>.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
-<p><code>pip install ruff-lsp</code></p>
+<p>For more instructions on how to install manually, check <a href="https://github.com/nextflow-io/language-server#build">here</a>.</p>
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
-<h3 id="lsp-ruff-lsp-advertize-fix-all"><code>lsp-ruff-lsp-advertize-fix-all</code><a class="headerlink" href="#lsp-ruff-lsp-advertize-fix-all" title="Permanent link">#</a></h3>
+<h3 id="lsp-nextflow-debug"><code>lsp-nextflow-debug</code><a class="headerlink" href="#lsp-nextflow-debug" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
-<p><em>Default:</em> <code>t</code></p>
-<p>Whether to report ability to handle source.fixAll actions.</p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Enable debug logging and debug information in hover hints.</p>
 <hr />
-<h3 id="lsp-ruff-lsp-advertize-organize-imports"><code>lsp-ruff-lsp-advertize-organize-imports</code><a class="headerlink" href="#lsp-ruff-lsp-advertize-organize-imports" title="Permanent link">#</a></h3>
+<h3 id="lsp-nextflow-files-exclude"><code>lsp-nextflow-files-exclude</code><a class="headerlink" href="#lsp-nextflow-files-exclude" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>lsp-string-vector</code></p>
+<p><em>Default:</em> <code>[.git .nf-test work]</code></p>
+<p>Configure glob patterns for excluding folders from being searched for
+Nextflow scripts and configuration files.</p>
+<hr />
+<h3 id="lsp-nextflow-formatting-harshil-alignment"><code>lsp-nextflow-formatting-harshil-alignment</code><a class="headerlink" href="#lsp-nextflow-formatting-harshil-alignment" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
-<p><em>Default:</em> <code>t</code></p>
-<p>Whether to report ability to handle source.organizeImports actions.</p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Use the <a href="https://nf-co.re/docs/contributing/code_editors_and_styling/harshil_alignment">Harshil Alignment™️</a> when formatting Nextflow scripts and config files.</p>
+<p><em>Note: not all rules are supported yet</em></p>
 <hr />
-<h3 id="lsp-ruff-lsp-import-strategy"><code>lsp-ruff-lsp-import-strategy</code><a class="headerlink" href="#lsp-ruff-lsp-import-strategy" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (const fromEnvironment) (const useBundled))</code></p>
-<p><em>Default:</em> <code>fromEnvironment</code></p>
-<p>Where ruff is imported from if lsp-ruff-lsp-ruff-path is not set.</p>
+<h3 id="lsp-nextflow-java-home"><code>lsp-nextflow-java-home</code><a class="headerlink" href="#lsp-nextflow-java-home" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(choice (const :tag Auto nil) (directory :tag Custom JDK path))</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Specifies the folder path to the JDK. Use this setting if the extension cannot
+find Java automatically.</p>
 <hr />
-<h3 id="lsp-ruff-lsp-log-level"><code>lsp-ruff-lsp-log-level</code><a class="headerlink" href="#lsp-ruff-lsp-log-level" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (const debug) (const error) (const info) (const off) (const warn))</code></p>
-<p><em>Default:</em> <code>error</code></p>
-<p>Tracing level.</p>
-<hr />
-<h3 id="lsp-ruff-lsp-python-path"><code>lsp-ruff-lsp-python-path</code><a class="headerlink" href="#lsp-ruff-lsp-python-path" title="Permanent link">#</a></h3>
+<h3 id="lsp-nextflow-java-path"><code>lsp-nextflow-java-path</code><a class="headerlink" href="#lsp-nextflow-java-path" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
-<p><em>Default:</em> <code>python3</code></p>
-<p>Path to the Python interpreter.</p>
+<p><em>Default:</em> <code>java</code></p>
+<p>Path of the java executable.</p>
 <hr />
-<h3 id="lsp-ruff-lsp-ruff-args"><code>lsp-ruff-lsp-ruff-args</code><a class="headerlink" href="#lsp-ruff-lsp-ruff-args" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>lsp-string-vector</code></p>
-<p><em>Default:</em> <code>[]</code></p>
-<p>Arguments, passed to ruff.</p>
+<h3 id="lsp-nextflow-server-download-url"><code>lsp-nextflow-server-download-url</code><a class="headerlink" href="#lsp-nextflow-server-download-url" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>string</code></p>
+<p><em>Default:</em> <code>https://github.com/nextflow-io/language-server/releases/download/v1.0.0/language-server-all.jar</code></p>
+<p>Automatic download url for lsp-nextflow.</p>
 <hr />
-<h3 id="lsp-ruff-lsp-ruff-path"><code>lsp-ruff-lsp-ruff-path</code><a class="headerlink" href="#lsp-ruff-lsp-ruff-path" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>lsp-string-vector</code></p>
-<p><em>Default:</em> <code>[ruff]</code></p>
-<p>Paths to ruff to try, in order.</p>
+<h3 id="lsp-nextflow-server-file"><code>lsp-nextflow-server-file</code><a class="headerlink" href="#lsp-nextflow-server-file" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>file</code></p>
+<p><em>Default:</em> <code>~/.emacs.d/.cache/lsp/nextflow-language-server.jar</code></p>
+<p>The path to the file in which <code>lsp-nextflow</code> will be stored.</p>
 <hr />
-<h3 id="lsp-ruff-lsp-server-command"><code>lsp-ruff-lsp-server-command</code><a class="headerlink" href="#lsp-ruff-lsp-server-command" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(repeat string)</code></p>
-<p><em>Default:</em> <code>(ruff-lsp)</code></p>
-<p>Command to start ruff-lsp.</p>
+<h3 id="lsp-nextflow-suppress-future-warnings"><code>lsp-nextflow-suppress-future-warnings</code><a class="headerlink" href="#lsp-nextflow-suppress-future-warnings" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Hide warnings for future changes, deprecations, and removals.</p>
 <hr />
-<h3 id="lsp-ruff-lsp-show-notifications"><code>lsp-ruff-lsp-show-notifications</code><a class="headerlink" href="#lsp-ruff-lsp-show-notifications" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (const off) (const onError) (const onWarning) (const always))</code></p>
-<p><em>Default:</em> <code>off</code></p>
-<p>When notifications are shown.</p>
+<h3 id="lsp-nextflow-version"><code>lsp-nextflow-version</code><a class="headerlink" href="#lsp-nextflow-version" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>string</code></p>
+<p><em>Default:</em> <code>1.0.0</code></p>
+<p>Version of Nextflow language server.</p>
 <hr />
 
 <!-- Source file information -->
@@ -3800,7 +3915,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 19, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 28, 2024</span>
       
     
   </small>
@@ -3818,7 +3933,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../lsp-pyls/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Python (Palantir deprecated)" rel="prev">
+        <a href="../lsp-mdx/" class="md-footer__link md-footer__link--prev" aria-label="Previous: MDX" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -3827,20 +3942,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Python (Palantir deprecated)
+              MDX
             </div>
           </div>
         </a>
       
       
         
-        <a href="../lsp-r/" class="md-footer__link md-footer__link--next" aria-label="Next: R" rel="next">
+        <a href="../lsp-nginx/" class="md-footer__link md-footer__link--next" aria-label="Next: Nginx" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              R
+              Nginx
             </div>
           </div>
           <div class="md-footer__button md-icon">

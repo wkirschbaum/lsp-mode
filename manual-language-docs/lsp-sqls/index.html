@@ -1218,6 +1218,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../page/lsp-buf/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf CLI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../page/lsp-bufls/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf Language Server)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../page/lsp-camel/" class="md-nav__link">
         Camel
       </a>
@@ -1262,6 +1290,20 @@
     <li class="md-nav__item">
       <a href="../../page/lsp-csharp-omnisharp/" class="md-nav__link">
         C# (omnisharp-roslyn)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../page/lsp-csharp-roslyn/" class="md-nav__link">
+        C# (csharp-roslyn)
       </a>
     </li>
   
@@ -1554,8 +1596,36 @@
   
   
     <li class="md-nav__item">
+      <a href="../../page/lsp-futhark/" class="md-nav__link">
+        Futhark
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../page/lsp-gdscript/" class="md-nav__link">
         GDScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../page/lsp-copilot/" class="md-nav__link">
+        Github Copilot
       </a>
     </li>
   
@@ -1932,6 +2002,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../page/lsp-fennel/" class="md-nav__link">
+        Fennel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../page/lsp-magik/" class="md-nav__link">
         Magik
       </a>
@@ -2030,6 +2114,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../page/lsp-nextflow/" class="md-nav__link">
+        Nextflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../page/lsp-nginx/" class="md-nav__link">
         Nginx
       </a>
@@ -2058,7 +2156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../page/lsp-nix-nixd.md" class="md-nav__link">
+      <a href="../../page/lsp-nix-nixd/" class="md-nav__link">
         Nix (nixd-lsp)
       </a>
     </li>
@@ -2072,7 +2170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../page/lsp-nix-rnix.md" class="md-nav__link">
+      <a href="../../page/lsp-nix-rnix/" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2366,7 +2464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../page/lsp-ruff-lsp/" class="md-nav__link">
+      <a href="../../page/lsp-ruff/" class="md-nav__link">
         Python (Ruff)
       </a>
     </li>
@@ -2788,6 +2886,20 @@
     <li class="md-nav__item">
       <a href="../../page/lsp-ttcn3/" class="md-nav__link">
         TTCN3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../page/lsp-typespec/" class="md-nav__link">
+        TypeSpec
       </a>
     </li>
   
@@ -3435,6 +3547,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#storing-configuration-in-projectsqlsconfigjson" class="md-nav__link">
+    Storing Configuration in &lt;project&gt;/.sqls/config.json
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storing-configuration-in-the-current-directory" class="md-nav__link">
+    Storing Configuration in the Current Directory
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3496,7 +3630,8 @@
       <span class="p">((</span><span class="nv">driver</span> <span class="o">.</span> <span class="s">&quot;mssql&quot;</span><span class="p">)</span> <span class="p">(</span><span class="nv">dataSourceName</span> <span class="o">.</span> <span class="s">&quot;Server=localhost;Database=sammy;User Id=yyoncho;Password=hunter2;&quot;</span><span class="p">))</span>
       <span class="p">((</span><span class="nv">driver</span> <span class="o">.</span> <span class="s">&quot;postgresql&quot;</span><span class="p">)</span> <span class="p">(</span><span class="nv">dataSourceName</span> <span class="o">.</span> <span class="s">&quot;host=127.0.0.1 port=5432 user=yyoncho password=local dbname=sammy sslmode=disable&quot;</span><span class="p">))))</span>
 </code></pre></div>
-<p>Alternatively, you can leave <code>lsp-sqls-workspace-config-path</code> to the default "workspace" value, and put a json file in <code>&lt;project&gt;/.sqls/config.json</code> containing
+<h2 id="storing-configuration-in-projectsqlsconfigjson">Storing Configuration in <code>&lt;project&gt;/.sqls/config.json</code><a class="headerlink" href="#storing-configuration-in-projectsqlsconfigjson" title="Permanent link">#</a></h2>
+<p>Alternatively, you can store your configuration in the project root at <code>&lt;project&gt;/.sqls/config.json</code>:</p>
 <div class="highlight"><pre><span></span><code>{
   &quot;sqls&quot;: {
     &quot;connections&quot;: [
@@ -3508,8 +3643,21 @@
     ]
   }
 }
-</code></pre></div></p>
-<p>Now lsp should start in sql-mode buffers, and you can pick a server connection with <code>M-x lsp-execute-code-action</code> and "Switch Connections" (or directly with <code>M-x lsp-sql-switch-connection</code>). You can change database with <code>M-x lsp-execute-code-action</code> and "Switch Database" (or <code>M-x lsp-sql-switch-database</code>).</p>
+</code></pre></div>
+<p>In this case, you need to set <code>lsp-sqls-workspace-config-path</code> to "root":</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-sqls-workspace-config-path</span> <span class="s">&quot;root&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="storing-configuration-in-the-current-directory">Storing Configuration in the Current Directory<a class="headerlink" href="#storing-configuration-in-the-current-directory" title="Permanent link">#</a></h2>
+<p>If you want to configure it for the current directory, you can create a <code>.sqls/config.json</code> file:</p>
+<div class="highlight"><pre><span></span><code>.sqls/config.json
+target.sql
+</code></pre></div>
+<p>For this setup, ensure that <code>lsp-sqls-workspace-config-path</code> is set to "workspace":</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-sqls-workspace-config-path</span> <span class="s">&quot;workspace&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h1 id="switching-connections-and-databases">Switching Connections and Databases<a class="headerlink" href="#switching-connections-and-databases" title="Permanent link">#</a></h1>
+<p>Now, lsp should start in sql-mode buffers. You can choose a server connection using <code>M-x lsp-execute-code-action</code> and then selecting "Switch Connections", or directly with <code>M-x lsp-sql-switch-connection</code>.</p>
+<p>To change the database, use <code>M-x lsp-execute-code-action</code> and select "Switch Database" (or <code>M-x lsp-sql-switch-database</code>).</p>
 
 <!-- Source file information -->
 
@@ -3518,7 +3666,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 19, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 28, 2024</span>
       
     
   </small>

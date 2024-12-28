@@ -820,6 +820,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#lsp-completion-default-behaviour" class="md-nav__link">
+    lsp-completion-default-behaviour
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-completion-enable" class="md-nav__link">
     lsp-completion-enable
   </a>
@@ -1335,6 +1342,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-buf/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf CLI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lsp-bufls/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf Language Server)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-camel/" class="md-nav__link">
         Camel
       </a>
@@ -1379,6 +1414,20 @@
     <li class="md-nav__item">
       <a href="../../lsp-csharp-omnisharp/" class="md-nav__link">
         C# (omnisharp-roslyn)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lsp-csharp-roslyn/" class="md-nav__link">
+        C# (csharp-roslyn)
       </a>
     </li>
   
@@ -1671,8 +1720,36 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-futhark/" class="md-nav__link">
+        Futhark
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-gdscript/" class="md-nav__link">
         GDScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lsp-copilot/" class="md-nav__link">
+        Github Copilot
       </a>
     </li>
   
@@ -2049,6 +2126,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-fennel/" class="md-nav__link">
+        Fennel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-magik/" class="md-nav__link">
         Magik
       </a>
@@ -2147,6 +2238,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-nextflow/" class="md-nav__link">
+        Nextflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-nginx/" class="md-nav__link">
         Nginx
       </a>
@@ -2175,7 +2280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lsp-nix-nixd.md" class="md-nav__link">
+      <a href="../../lsp-nix-nixd/" class="md-nav__link">
         Nix (nixd-lsp)
       </a>
     </li>
@@ -2189,7 +2294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lsp-nix-rnix.md" class="md-nav__link">
+      <a href="../../lsp-nix-rnix/" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2483,7 +2588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lsp-ruff-lsp/" class="md-nav__link">
+      <a href="../../lsp-ruff/" class="md-nav__link">
         Python (Ruff)
       </a>
     </li>
@@ -2905,6 +3010,20 @@
     <li class="md-nav__item">
       <a href="../../lsp-ttcn3/" class="md-nav__link">
         TTCN3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lsp-typespec/" class="md-nav__link">
+        TypeSpec
       </a>
     </li>
   
@@ -3559,6 +3678,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#lsp-completion-default-behaviour" class="md-nav__link">
+    lsp-completion-default-behaviour
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-completion-enable" class="md-nav__link">
     lsp-completion-enable
   </a>
@@ -3691,6 +3817,11 @@
 
 <!-- Markdown content -->
 <h1 id="completion">Completion<a class="headerlink" href="#completion" title="Permanent link">#</a></h1>
+<h3 id="lsp-completion-default-behaviour"><code>lsp-completion-default-behaviour</code><a class="headerlink" href="#lsp-completion-default-behaviour" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(choice (const :tag Default completion inserts :insert) (const :tag Default completion replaces :replace))</code></p>
+<p><em>Default:</em> <code>:replace</code></p>
+<p>Default behaviour of <code>InsertReplaceEdit</code>.</p>
+<hr />
 <h3 id="lsp-completion-enable"><code>lsp-completion-enable</code><a class="headerlink" href="#lsp-completion-enable" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
@@ -3758,7 +3889,7 @@ This will help minimize popup flickering issue in <code>company-mode</code>.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 19, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 28, 2024</span>
       
     
   </small>

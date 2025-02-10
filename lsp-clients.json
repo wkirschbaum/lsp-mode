@@ -163,6 +163,14 @@
     "debugger": "Yes (netcoredbg)"
   },
   {
+    "name": "c3-lsp",
+    "full-name": "c3 language server",
+    "server-name": "c3lsp",
+    "server-url": "https://github.com/pherrymason/c3-lsp",
+    "installation-url": "https://github.com/pherrymason/c3-lsp",
+    "debugger": "Yes (gdb or lldb)"
+  },
+  {
     "name": "ccls",
     "full-name": "C++",
     "server-name": "ccls",
@@ -583,6 +591,14 @@
     "debugger": "Not available"
   },
   {
+    "name": "ltex-plus",
+    "full-name": "LanguageTool",
+    "server-name": "LTEX+",
+    "server-url": "https://github.com/ltex-plus/ltex-ls-plus",
+    "installation-url": "https://ltex-plus.github.io/ltex-plus/installation-usage.html",
+    "debugger": "Not available"
+  },
+  {
     "name": "emmy-lua",
     "common-group-name": "lua",
     "full-name": "Lua",
@@ -652,6 +668,14 @@
     "server-name": "marksman",
     "server-url": "https://github.com/artempyanykh/marksman",
     "installation-url": "https://github.com/artempyanykh/marksman",
+    "debugger": "Not available"
+  },
+  {
+    "name": "matlab",
+    "full-name": "MATLAB",
+    "server-name": "MATLAB language server",
+    "server-url": "https://github.com/mathworks/MATLAB-language-server",
+    "installation-url": "https://github.com/mathworks/MATLAB-language-server",
     "debugger": "Not available"
   },
   {
@@ -985,6 +1009,15 @@
     "debugger": "Yes"
   },
   {
+    "name": "roc",
+    "full-name": "Roc",
+    "server-name": "roc_language_server",
+    "server-url": "https://github.com/roc-lang/roc/tree/main/crates/language_server",
+    "installation-url": "https://github.com/roc-lang/roc/tree/main/crates/language_server",
+    "installation": "Along with the compiler",
+    "debugger": "Not available"
+  },
+  {
     "name": "ruby-lsp",
     "full-name": "Ruby (ruby-lsp)",
     "server-name": "ruby-lsp",
@@ -1189,6 +1222,13 @@
     "debugger": "Not available"
   },
   {
+    "name": "ts-query",
+    "full-name": "Tree-sitter Query",
+    "server-name": "ts-query-lsp",
+    "server-url": "https://github.com/ribru17/ts_query_ls",
+    "debugger": "Not available"
+  },
+  {
     "name": "typeprof",
     "full-name": "Ruby (TypeProf)",
     "server-name": "typeprof",
@@ -1297,6 +1337,14 @@
     "server-url": "https://github.com/redhat-developer/yaml-language-server",
     "installation": "npm install -g yaml-language-server",
     "lsp-install-server": "yamlls",
+    "debugger": "Not available"
+  },
+  {
+    "name": "helm",
+    "full-name": "YAML (helm-ls)",
+    "server-name": "helm-ls",
+    "server-url": "https://github.com/mrjosh/helm-ls",
+    "installation-url": "https://github.com/mrjosh/helm-ls?tab=readme-ov-file#installation-with-a-package-manager",
     "debugger": "Not available"
   },
   {

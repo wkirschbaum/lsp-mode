@@ -876,13 +876,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lsp-completion-show-label-description" class="md-nav__link">
-    lsp-completion-show-label-description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#lsp-completion-sort-initial-results" class="md-nav__link">
     lsp-completion-sort-initial-results
   </a>
@@ -1454,6 +1447,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-c3-lsp/" class="md-nav__link">
+        C3 (c3-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-clojure/" class="md-nav__link">
         Clojure
       </a>
@@ -1638,6 +1645,34 @@
     <li class="md-nav__item">
       <a href="../../lsp-elm/" class="md-nav__link">
         Elm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/elisp-lsp/ellsp" class="md-nav__link">
+        Emacs Lisp (Ellsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/emacs-elsa/Elsa" class="md-nav__link">
+        Emacs Lisp (Elsa)
       </a>
     </li>
   
@@ -2070,6 +2105,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-ltex-plus/" class="md-nav__link">
+        LanguageTool (LTEX+)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-lisp/" class="md-nav__link">
         Lisp
       </a>
@@ -2170,6 +2219,20 @@
     <li class="md-nav__item">
       <a href="../../lsp-marksman/" class="md-nav__link">
         Marksman
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lsp-matlab/" class="md-nav__link">
+        MATLAB
       </a>
     </li>
   
@@ -2658,6 +2721,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -2994,6 +3071,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3192,6 +3283,20 @@
     <li class="md-nav__item">
       <a href="../../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -3734,13 +3839,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lsp-completion-show-label-description" class="md-nav__link">
-    lsp-completion-show-label-description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#lsp-completion-sort-initial-results" class="md-nav__link">
     lsp-completion-sort-initial-results
   </a>
@@ -3820,18 +3918,18 @@
 <h3 id="lsp-completion-default-behaviour"><code>lsp-completion-default-behaviour</code><a class="headerlink" href="#lsp-completion-default-behaviour" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(choice (const :tag Default completion inserts :insert) (const :tag Default completion replaces :replace))</code></p>
 <p><em>Default:</em> <code>:replace</code></p>
-<p>Default behaviour of <code>InsertReplaceEdit</code>.</p>
+<p>Default behaviour of `InsertReplaceEdit'.</p>
 <hr />
 <h3 id="lsp-completion-enable"><code>lsp-completion-enable</code><a class="headerlink" href="#lsp-completion-enable" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Enable <code>completion-at-point</code> integration.</p>
+<p>Enable `completion-at-point' integration.</p>
 <hr />
 <h3 id="lsp-completion-enable-additional-text-edit"><code>lsp-completion-enable-additional-text-edit</code><a class="headerlink" href="#lsp-completion-enable-additional-text-edit" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
 <p>Whether or not to apply additional text edit when performing completion.</p>
-<p>If set to non-nil, <code>lsp-mode</code> will apply additional text edits
+<p>If set to non-nil, `lsp-mode' will apply additional text edits
 from the server.  Otherwise, the additional text edits are
 ignored.</p>
 <hr />
@@ -3860,11 +3958,6 @@ ignored.</p>
 <p><em>Default:</em> <code>t</code></p>
 <p>Whether or not to show kind of completion candidates.</p>
 <hr />
-<h3 id="lsp-completion-show-label-description"><code>lsp-completion-show-label-description</code><a class="headerlink" href="#lsp-completion-show-label-description" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>boolean</code></p>
-<p><em>Default:</em> <code>t</code></p>
-<p>Whether or not to show description of completion candidates.</p>
-<hr />
 <h3 id="lsp-completion-sort-initial-results"><code>lsp-completion-sort-initial-results</code><a class="headerlink" href="#lsp-completion-sort-initial-results" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
@@ -3874,7 +3967,7 @@ ignored.</p>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
 <p>Temporarily use last server result when interrupted by keyboard.
-This will help minimize popup flickering issue in <code>company-mode</code>.</p>
+This will help minimize popup flickering issue in `company-mode'.</p>
 <hr />
 <h3 id="lsp-enable-snippet"><code>lsp-enable-snippet</code><a class="headerlink" href="#lsp-enable-snippet" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -3889,7 +3982,7 @@ This will help minimize popup flickering issue in <code>company-mode</code>.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 30, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2025</span>
       
     
   </small>

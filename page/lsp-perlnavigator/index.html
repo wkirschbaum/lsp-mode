@@ -1334,6 +1334,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-c3-lsp/" class="md-nav__link">
+        C3 (c3-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-clojure/" class="md-nav__link">
         Clojure
       </a>
@@ -1518,6 +1532,34 @@
     <li class="md-nav__item">
       <a href="../lsp-elm/" class="md-nav__link">
         Elm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/elisp-lsp/ellsp" class="md-nav__link">
+        Emacs Lisp (Ellsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/emacs-elsa/Elsa" class="md-nav__link">
+        Emacs Lisp (Elsa)
       </a>
     </li>
   
@@ -1950,6 +1992,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ltex-plus/" class="md-nav__link">
+        LanguageTool (LTEX+)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-lisp/" class="md-nav__link">
         Lisp
       </a>
@@ -2050,6 +2106,20 @@
     <li class="md-nav__item">
       <a href="../lsp-marksman/" class="md-nav__link">
         Marksman
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-matlab/" class="md-nav__link">
+        MATLAB
       </a>
     </li>
   
@@ -2724,6 +2794,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -3060,6 +3144,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3258,6 +3356,20 @@
     <li class="md-nav__item">
       <a href="../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -4009,32 +4121,32 @@ default to ~/.perlcriticrc. (no aliases, .bat files or ~/).</p>
 <p>Path to perl tidy profile (no aliases, .bat files or ~/).</p>
 <hr />
 <h3 id="lsp-perlnavigator-severity1"><code>lsp-perlnavigator-severity1</code><a class="headerlink" href="#lsp-perlnavigator-severity1" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag error warning info hint none))</code></p>
+<p><em>Type:</em> <code>(choice (const error) (const warning) (const info) (const hint) (const none))</code></p>
 <p><em>Default:</em> <code>hint</code></p>
 <p>Editor Diagnostic severity level for Critic severity 1.</p>
 <hr />
 <h3 id="lsp-perlnavigator-severity2"><code>lsp-perlnavigator-severity2</code><a class="headerlink" href="#lsp-perlnavigator-severity2" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag error warning info hint none))</code></p>
+<p><em>Type:</em> <code>(choice (const error) (const warning) (const info) (const hint) (const none))</code></p>
 <p><em>Default:</em> <code>hint</code></p>
 <p>Editor Diagnostic severity level for Critic severity 2.</p>
 <hr />
 <h3 id="lsp-perlnavigator-severity3"><code>lsp-perlnavigator-severity3</code><a class="headerlink" href="#lsp-perlnavigator-severity3" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag error warning info hint none))</code></p>
+<p><em>Type:</em> <code>(choice (const error) (const warning) (const info) (const hint) (const none))</code></p>
 <p><em>Default:</em> <code>hint</code></p>
 <p>Editor Diagnostic severity level for Critic severity 3.</p>
 <hr />
 <h3 id="lsp-perlnavigator-severity4"><code>lsp-perlnavigator-severity4</code><a class="headerlink" href="#lsp-perlnavigator-severity4" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag error warning info hint none))</code></p>
+<p><em>Type:</em> <code>(choice (const error) (const warning) (const info) (const hint) (const none))</code></p>
 <p><em>Default:</em> <code>info</code></p>
 <p>Editor Diagnostic severity level for Critic severity 4.</p>
 <hr />
 <h3 id="lsp-perlnavigator-severity5"><code>lsp-perlnavigator-severity5</code><a class="headerlink" href="#lsp-perlnavigator-severity5" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag error warning info hint none))</code></p>
+<p><em>Type:</em> <code>(choice (const error) (const warning) (const info) (const hint) (const none))</code></p>
 <p><em>Default:</em> <code>warning</code></p>
 <p>Editor Diagnostic severity level for Critic severity 5.</p>
 <hr />
 <h3 id="lsp-perlnavigator-trace-server"><code>lsp-perlnavigator-trace-server</code><a class="headerlink" href="#lsp-perlnavigator-trace-server" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag off messages verbose))</code></p>
+<p><em>Type:</em> <code>(choice (const off) (const messages) (const verbose))</code></p>
 <p><em>Default:</em> <code>messages</code></p>
 <p>Traces the communication between VS Code and the language server.</p>
 <hr />
@@ -4046,7 +4158,7 @@ default to ~/.perlcriticrc. (no aliases, .bat files or ~/).</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 30, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2025</span>
       
     
   </small>

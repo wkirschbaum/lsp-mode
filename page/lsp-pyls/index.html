@@ -1334,6 +1334,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-c3-lsp/" class="md-nav__link">
+        C3 (c3-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-clojure/" class="md-nav__link">
         Clojure
       </a>
@@ -1518,6 +1532,34 @@
     <li class="md-nav__item">
       <a href="../lsp-elm/" class="md-nav__link">
         Elm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/elisp-lsp/ellsp" class="md-nav__link">
+        Emacs Lisp (Ellsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/emacs-elsa/Elsa" class="md-nav__link">
+        Emacs Lisp (Elsa)
       </a>
     </li>
   
@@ -1950,6 +1992,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ltex-plus/" class="md-nav__link">
+        LanguageTool (LTEX+)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-lisp/" class="md-nav__link">
         Lisp
       </a>
@@ -2050,6 +2106,20 @@
     <li class="md-nav__item">
       <a href="../lsp-marksman/" class="md-nav__link">
         Marksman
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-matlab/" class="md-nav__link">
+        MATLAB
       </a>
     </li>
   
@@ -2990,6 +3060,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -3326,6 +3410,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3524,6 +3622,20 @@
     <li class="md-nav__item">
       <a href="../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -4514,7 +4626,7 @@
 <p><em>Default:</em> <code>nil</code></p>
 <p>A path to a config file that will be the only config file read and used.
 This will cause Flake8 to ignore all other config files that exist.</p>
-<p>NOTE: other parameters as <code>lsp-pyls-plugins-flake8-max-line-length</code> take
+<p>NOTE: other parameters as `lsp-pyls-plugins-flake8-max-line-length' take
 precedence over parameters referenced in config.</p>
 <hr />
 <h3 id="lsp-pyls-plugins-flake8-enabled"><code>lsp-pyls-plugins-flake8-enabled</code><a class="headerlink" href="#lsp-pyls-plugins-flake8-enabled" title="Permanent link">#</a></h3>
@@ -4555,7 +4667,7 @@ entirely URLs.</p>
 <p><em>Type:</em> <code>(repeat string)</code></p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>Specify the list of error codes you wish Flake8 to report. Similarly to
-<code>lsp-pyls-plugins-flake8-ignore</code>. You can specify a portion of an error code to
+`lsp-pyls-plugins-flake8-ignore'. You can specify a portion of an error code to
 get all that start with that string. For example, you can use E, E4, E43, and
 E431</p>
 <hr />
@@ -4576,7 +4688,7 @@ completion items.</p>
 <p><em>Default:</em> <code>t</code></p>
 <p>If enabled, adds class objects to completion in order to avoid snippet
 with init args.</p>
-<p>Has no effect if <code>lsp-pyls-plugins-jedi-completion-include-params</code> is disabled.
+<p>Has no effect if `lsp-pyls-plugins-jedi-completion-include-params' is disabled.
 Requires pyls &gt;= 0.33.0</p>
 <hr />
 <h3 id="lsp-pyls-plugins-jedi-completion-include-params"><code>lsp-pyls-plugins-jedi-completion-include-params</code><a class="headerlink" href="#lsp-pyls-plugins-jedi-completion-include-params" title="Permanent link">#</a></h3>
@@ -4606,7 +4718,7 @@ imports.</p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>Specify the environment that jedi runs on where <environment>/bin/python
 should be the python executable. This option will be prioritized over
-<code>lsp-pyls-plugins-jedi-use-pyenv-environment</code>.</p>
+`lsp-pyls-plugins-jedi-use-pyenv-environment'.</p>
 <hr />
 <h3 id="lsp-pyls-plugins-jedi-hover-enabled"><code>lsp-pyls-plugins-jedi-hover-enabled</code><a class="headerlink" href="#lsp-pyls-plugins-jedi-hover-enabled" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -4680,7 +4792,7 @@ patterns.</p>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>Hang closing bracket instead of matching indentation of
-opening bracket`s line.</p>
+opening bracket's line.</p>
 <hr />
 <h3 id="lsp-pyls-plugins-pycodestyle-ignore"><code>lsp-pyls-plugins-pycodestyle-ignore</code><a class="headerlink" href="#lsp-pyls-plugins-pycodestyle-ignore" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat string)</code></p>
@@ -4710,7 +4822,7 @@ convention.</p>
 convention.</p>
 <hr />
 <h3 id="lsp-pyls-plugins-pydocstyle-convention"><code>lsp-pyls-plugins-pydocstyle-convention</code><a class="headerlink" href="#lsp-pyls-plugins-pydocstyle-convention" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag pep257 numpy))</code></p>
+<p><em>Type:</em> <code>(choice (const pep257) (const numpy))</code></p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>Choose the basic list of checked errors by specifying an
 existing convention.</p>
@@ -4729,7 +4841,8 @@ existing convention.</p>
 <p><em>Type:</em> <code>string</code></p>
 <p><em>Default:</em> <code>(?!test_).*\.py</code></p>
 <p>Check only files that exactly match the given regular
-expression; default is to match files that don<code>t start with</code>test_<code>but end with</code>.py`.</p>
+expression; default is to match files that don't start with
+<code>test_' but end with</code>.py'.</p>
 <hr />
 <h3 id="lsp-pyls-plugins-pydocstyle-match-dir"><code>lsp-pyls-plugins-pydocstyle-match-dir</code><a class="headerlink" href="#lsp-pyls-plugins-pydocstyle-match-dir" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
@@ -4773,7 +4886,7 @@ dot.</p>
 <p><em>Default:</em> <code>jedi</code></p>
 <p>Choose renaming backend.</p>
 <p>Jedi is preferred but only works for python &gt;= 3.6 and pyls &gt;= 0.32.0
-Beware that Jedi is lazy and doesn`t scan the whole project.
+Beware that Jedi is lazy and doesn't scan the whole project.
 So it will rename only references it can find.</p>
 <hr />
 <h3 id="lsp-pyls-rope-extension-modules"><code>lsp-pyls-rope-extension-modules</code><a class="headerlink" href="#lsp-pyls-rope-extension-modules" title="Permanent link">#</a></h3>
@@ -4802,7 +4915,7 @@ at all.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 30, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2025</span>
       
     
   </small>

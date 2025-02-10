@@ -1263,6 +1263,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#lsp-bash-allowed-shells" class="md-nav__link">
+    lsp-bash-allowed-shells
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-bash-explainshell-endpoint" class="md-nav__link">
     lsp-bash-explainshell-endpoint
   </a>
@@ -1417,6 +1424,20 @@
     <li class="md-nav__item">
       <a href="../lsp-csharp-ls/" class="md-nav__link">
         C# (csharp-ls)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-c3-lsp/" class="md-nav__link">
+        C3 (c3-lsp)
       </a>
     </li>
   
@@ -1613,6 +1634,34 @@
     <li class="md-nav__item">
       <a href="../lsp-elm/" class="md-nav__link">
         Elm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/elisp-lsp/ellsp" class="md-nav__link">
+        Emacs Lisp (Ellsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/emacs-elsa/Elsa" class="md-nav__link">
+        Emacs Lisp (Elsa)
       </a>
     </li>
   
@@ -2045,6 +2094,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ltex-plus/" class="md-nav__link">
+        LanguageTool (LTEX+)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-lisp/" class="md-nav__link">
         Lisp
       </a>
@@ -2145,6 +2208,20 @@
     <li class="md-nav__item">
       <a href="../lsp-marksman/" class="md-nav__link">
         Marksman
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-matlab/" class="md-nav__link">
+        MATLAB
       </a>
     </li>
   
@@ -2633,6 +2710,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -2969,6 +3060,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3167,6 +3272,20 @@
     <li class="md-nav__item">
       <a href="../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -3688,6 +3807,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#lsp-bash-allowed-shells" class="md-nav__link">
+    lsp-bash-allowed-shells
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-bash-explainshell-endpoint" class="md-nav__link">
     lsp-bash-explainshell-endpoint
   </a>
@@ -3777,10 +3903,15 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
 <p><code>npm i -g bash-language-server</code></p>
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
+<h3 id="lsp-bash-allowed-shells"><code>lsp-bash-allowed-shells</code><a class="headerlink" href="#lsp-bash-allowed-shells" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(list symbol)</code></p>
+<p><em>Default:</em> <code>(sh bash)</code></p>
+<p>List of allowed <code>sh-shell</code> values that LSP will be enabled for.</p>
+<hr />
 <h3 id="lsp-bash-explainshell-endpoint"><code>lsp-bash-explainshell-endpoint</code><a class="headerlink" href="#lsp-bash-explainshell-endpoint" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>The endpoint to use explainshell.com to answer <code>onHover</code> queries.
+<p>The endpoint to use explainshell.com to answer `onHover' queries.
 See instructions at https://marketplace.visualstudio.com/items?itemName=mads-hartmann.bash-ide-vscode</p>
 <hr />
 <h3 id="lsp-bash-glob-pattern"><code>lsp-bash-glob-pattern</code><a class="headerlink" href="#lsp-bash-glob-pattern" title="Permanent link">#</a></h3>
@@ -3791,7 +3922,7 @@ See instructions at https://marketplace.visualstudio.com/items?itemName=mads-har
 <h3 id="lsp-bash-highlight-parsing-errors"><code>lsp-bash-highlight-parsing-errors</code><a class="headerlink" href="#lsp-bash-highlight-parsing-errors" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>Consider parsing errors in scripts as <code>problems</code>.</p>
+<p>Consider parsing errors in scripts as `problems'.</p>
 <hr />
 
 <!-- Source file information -->
@@ -3801,7 +3932,7 @@ See instructions at https://marketplace.visualstudio.com/items?itemName=mads-har
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 30, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2025</span>
       
     
   </small>

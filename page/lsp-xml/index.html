@@ -1334,6 +1334,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-c3-lsp/" class="md-nav__link">
+        C3 (c3-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-clojure/" class="md-nav__link">
         Clojure
       </a>
@@ -1518,6 +1532,34 @@
     <li class="md-nav__item">
       <a href="../lsp-elm/" class="md-nav__link">
         Elm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/elisp-lsp/ellsp" class="md-nav__link">
+        Emacs Lisp (Ellsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/emacs-elsa/Elsa" class="md-nav__link">
+        Emacs Lisp (Elsa)
       </a>
     </li>
   
@@ -1950,6 +1992,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ltex-plus/" class="md-nav__link">
+        LanguageTool (LTEX+)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-lisp/" class="md-nav__link">
         Lisp
       </a>
@@ -2050,6 +2106,20 @@
     <li class="md-nav__item">
       <a href="../lsp-marksman/" class="md-nav__link">
         Marksman
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-matlab/" class="md-nav__link">
+        MATLAB
       </a>
     </li>
   
@@ -2538,6 +2608,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -2862,6 +2946,20 @@
     <li class="md-nav__item">
       <a href="../lsp-toml/" class="md-nav__link">
         TOML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
       </a>
     </li>
   
@@ -3398,6 +3496,20 @@
     <li class="md-nav__item">
       <a href="../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -4242,7 +4354,7 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
 <h3 id="lsp-xml-bin-download-url"><code>lsp-xml-bin-download-url</code><a class="headerlink" href="#lsp-xml-bin-download-url" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
 <p><em>Default:</em> <code>https://github.com/redhat-developer/vscode-xml/releases/download/latest/lemminx-linux.zip</code></p>
-<p>Automatic download url for lsp-xml`s native binary.</p>
+<p>Automatic download url for lsp-xml's native binary.</p>
 <hr />
 <h3 id="lsp-xml-bin-file"><code>lsp-xml-bin-file</code><a class="headerlink" href="#lsp-xml-bin-file" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>file</code></p>
@@ -4304,7 +4416,7 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
 <h3 id="lsp-xml-format-join-cdata-lines"><code>lsp-xml-format-join-cdata-lines</code><a class="headerlink" href="#lsp-xml-format-join-cdata-lines" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>Join lines in a CDATA tag`s content</p>
+<p>Join lines in a CDATA tag's content</p>
 <hr />
 <h3 id="lsp-xml-format-join-comment-lines"><code>lsp-xml-format-join-comment-lines</code><a class="headerlink" href="#lsp-xml-format-join-comment-lines" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -4422,7 +4534,7 @@ Example: <tag/> -&gt; <tag /></p>
 <p>Enable/disable all validation.</p>
 <hr />
 <h3 id="lsp-xml-validation-no-grammar"><code>lsp-xml-validation-no-grammar</code><a class="headerlink" href="#lsp-xml-validation-no-grammar" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag ignore hint info warning error))</code></p>
+<p><em>Type:</em> <code>(choice (const ignore) (const hint) (const info) (const warning) (const error))</code></p>
 <p><em>Default:</em> <code>hint</code></p>
 <p>The message severity when a document has no associated
   grammar.</p>
@@ -4436,7 +4548,7 @@ Example: <tag/> -&gt; <tag /></p>
 <p><em>Type:</em> <code>alist</code></p>
 <p><em>Default:</em> <code>((enabled . always))</code></p>
 <p>The XML schema settings.</p>
-<p>The value for <code>enabled</code> can be always, never or onValidSchema.</p>
+<p>The value for `enabled' can be always, never or onValidSchema.</p>
 <hr />
 
 <!-- Source file information -->
@@ -4446,7 +4558,7 @@ Example: <tag/> -&gt; <tag /></p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 30, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2025</span>
       
     
   </small>

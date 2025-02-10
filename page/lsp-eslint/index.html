@@ -1334,6 +1334,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-c3-lsp/" class="md-nav__link">
+        C3 (c3-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-clojure/" class="md-nav__link">
         Clojure
       </a>
@@ -1518,6 +1532,34 @@
     <li class="md-nav__item">
       <a href="../lsp-elm/" class="md-nav__link">
         Elm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/elisp-lsp/ellsp" class="md-nav__link">
+        Emacs Lisp (Ellsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/emacs-elsa/Elsa" class="md-nav__link">
+        Emacs Lisp (Elsa)
       </a>
     </li>
   
@@ -2241,6 +2283,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ltex-plus/" class="md-nav__link">
+        LanguageTool (LTEX+)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-lisp/" class="md-nav__link">
         Lisp
       </a>
@@ -2341,6 +2397,20 @@
     <li class="md-nav__item">
       <a href="../lsp-marksman/" class="md-nav__link">
         Marksman
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-matlab/" class="md-nav__link">
+        MATLAB
       </a>
     </li>
   
@@ -2829,6 +2899,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -3165,6 +3249,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3363,6 +3461,20 @@
     <li class="md-nav__item">
       <a href="../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -4174,7 +4286,7 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
 <p>Turns auto fix on save on or off.</p>
 <hr />
 <h3 id="lsp-eslint-code-action-disable-rule-comment"><code>lsp-eslint-code-action-disable-rule-comment</code><a class="headerlink" href="#lsp-eslint-code-action-disable-rule-comment" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>bool</code></p>
+<p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
 <p>Controls whether code actions to add a rule-disabling comment should be shown.</p>
 <hr />
@@ -4187,7 +4299,7 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
 - "sameLine": Add the comment on the same line that will be disabled.</p>
 <hr />
 <h3 id="lsp-eslint-code-action-show-documentation"><code>lsp-eslint-code-action-show-documentation</code><a class="headerlink" href="#lsp-eslint-code-action-show-documentation" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>bool</code></p>
+<p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
 <p>Controls whether code actions to show documentation for an ESLint rule should
 be shown.</p>
@@ -4254,13 +4366,13 @@ workspace (see https://eslint.org/docs/user-guide/command-line-interface).</p>
 <h3 id="lsp-eslint-node-path"><code>lsp-eslint-node-path</code><a class="headerlink" href="#lsp-eslint-node-path" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat string)</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>A path added to NODE_PATH when resolving the <code>eslint</code> module.</p>
+<p>A path added to NODE_PATH when resolving the `eslint' module.</p>
 <hr />
 <h3 id="lsp-eslint-options"><code>lsp-eslint-options</code><a class="headerlink" href="#lsp-eslint-options" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>alist</code></p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>The ESLint options object to provide args normally passed to
-  <code>eslint</code> when executed from a command line (see
+  `eslint' when executed from a command line (see
   https://eslint.org/docs/latest/integrate/nodejs-api).</p>
 <hr />
 <h3 id="lsp-eslint-package-manager"><code>lsp-eslint-package-manager</code><a class="headerlink" href="#lsp-eslint-package-manager" title="Permanent link">#</a></h3>
@@ -4329,7 +4441,7 @@ from running.</p>
 <h3 id="lsp-eslint-unzipped-path"><code>lsp-eslint-unzipped-path</code><a class="headerlink" href="#lsp-eslint-unzipped-path" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>file</code></p>
 <p><em>Default:</em> <code>~/.emacs.d/.cache/lsp/eslint/unzipped</code></p>
-<p>The path to the file in which <code>eslint</code> will be stored.</p>
+<p>The path to the file in which `eslint' will be stored.</p>
 <hr />
 <h3 id="lsp-eslint-validate"><code>lsp-eslint-validate</code><a class="headerlink" href="#lsp-eslint-validate" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat string)</code></p>
@@ -4337,7 +4449,7 @@ from running.</p>
 <p>An array of language ids which should always be validated by ESLint.</p>
 <hr />
 <h3 id="lsp-eslint-warn-on-ignored-files"><code>lsp-eslint-warn-on-ignored-files</code><a class="headerlink" href="#lsp-eslint-warn-on-ignored-files" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>bool</code></p>
+<p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>Controls whether a warning should be emitted when a file is ignored.</p>
 <hr />
@@ -4365,7 +4477,7 @@ Note that the home directory reference ~/ is not currently supported, use
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 30, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2025</span>
       
     
   </small>

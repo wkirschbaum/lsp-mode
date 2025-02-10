@@ -1226,8 +1226,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lsp-inline-completion-accepted-hook" class="md-nav__link">
-    lsp-inline-completion-accepted-hook
+  <a href="#lsp-inline-completion-accepted-functions" class="md-nav__link">
+    lsp-inline-completion-accepted-functions
   </a>
   
 </li>
@@ -2182,6 +2182,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-c3-lsp/" class="md-nav__link">
+        C3 (c3-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-clojure/" class="md-nav__link">
         Clojure
       </a>
@@ -2366,6 +2380,34 @@
     <li class="md-nav__item">
       <a href="../../lsp-elm/" class="md-nav__link">
         Elm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/elisp-lsp/ellsp" class="md-nav__link">
+        Emacs Lisp (Ellsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/emacs-elsa/Elsa" class="md-nav__link">
+        Emacs Lisp (Elsa)
       </a>
     </li>
   
@@ -2798,6 +2840,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-ltex-plus/" class="md-nav__link">
+        LanguageTool (LTEX+)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-lisp/" class="md-nav__link">
         Lisp
       </a>
@@ -2898,6 +2954,20 @@
     <li class="md-nav__item">
       <a href="../../lsp-marksman/" class="md-nav__link">
         Marksman
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lsp-matlab/" class="md-nav__link">
+        MATLAB
       </a>
     </li>
   
@@ -3386,6 +3456,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -3722,6 +3806,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3920,6 +4018,20 @@
     <li class="md-nav__item">
       <a href="../../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -4826,8 +4938,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lsp-inline-completion-accepted-hook" class="md-nav__link">
-    lsp-inline-completion-accepted-hook
+  <a href="#lsp-inline-completion-accepted-functions" class="md-nav__link">
+    lsp-inline-completion-accepted-functions
   </a>
   
 </li>
@@ -5310,17 +5422,17 @@ for a new workspace.</p>
 <p><em>Default:</em> <code>t</code></p>
 <p>Whether to apply edits returned by server after file operations if any.
 Applicable only if server supports workspace.fileOperations for operations:
-<code>workspace/willRenameFiles</code>, <code>workspace/willCreateFiles</code> and
-<code>workspace/willDeleteFiles</code>.</p>
+<code>workspace/willRenameFiles',</code>workspace/willCreateFiles' and
+`workspace/willDeleteFiles'.</p>
 <hr />
 <h3 id="lsp-auto-configure"><code>lsp-auto-configure</code><a class="headerlink" href="#lsp-auto-configure" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Auto configure <code>lsp-mode</code> main features.
-When set to t <code>lsp-mode</code> will auto-configure completion,
-code-actions, breadcrumb, <code>flycheck</code>, <code>flymake</code>, <code>imenu</code>, symbol highlighting,
+<p>Auto configure <code>lsp-mode' main features.
+When set to t</code>lsp-mode' will auto-configure completion,
+code-actions, breadcrumb, <code>flycheck',</code>flymake', `imenu', symbol highlighting,
 lenses, links, and so on.</p>
-<p>For finer granularity you may use <code>lsp-enable-*</code> properties.</p>
+<p>For finer granularity you may use `lsp-enable-*' properties.</p>
 <hr />
 <h3 id="lsp-auto-execute-action"><code>lsp-auto-execute-action</code><a class="headerlink" href="#lsp-auto-execute-action" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -5331,9 +5443,9 @@ lenses, links, and so on.</p>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>Automatically guess the project root using projectile/project.
-Do <em>not</em> use this setting unless you are familiar with <code>lsp-mode</code>
+Do <em>not</em> use this setting unless you are familiar with <code>lsp-mode'
 internals and you are sure that all of your projects are
-following <code>projectile</code>/<code>project.el</code> conventions.</p>
+following</code>projectile'/`project.el' conventions.</p>
 <hr />
 <h3 id="lsp-auto-register-remote-clients"><code>lsp-auto-register-remote-clients</code><a class="headerlink" href="#lsp-auto-register-remote-clients" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -5345,14 +5457,13 @@ following <code>projectile</code>/<code>project.el</code> conventions.</p>
 <p><em>Default:</em> <code>t</code></p>
 <p>Shutdown or restart a single workspace.
 If set and the current buffer has only a single workspace
-associated with it, <code>lsp-shutdown-workspace</code> and
-<code>lsp-restart-workspace</code> will act on it without asking.</p>
+associated with it, <code>lsp-shutdown-workspace' and</code>lsp-restart-workspace' will act on it without asking.</p>
 <hr />
 <h3 id="lsp-auto-touch-files"><code>lsp-auto-touch-files</code><a class="headerlink" href="#lsp-auto-touch-files" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
 <p>If non-nil ensure the files exist before sending
-<code>textDocument/didOpen</code> notification.</p>
+`textDocument/didOpen' notification.</p>
 <hr />
 <h3 id="lsp-before-apply-edits-hook"><code>lsp-before-apply-edits-hook</code><a class="headerlink" href="#lsp-before-apply-edits-hook" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>hook</code></p>
@@ -5368,7 +5479,7 @@ for a new workspace.</p>
 <h3 id="lsp-before-inline-completion-hook"><code>lsp-before-inline-completion-hook</code><a class="headerlink" href="#lsp-before-inline-completion-hook" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>hook</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>Hooks run before starting code suggestions</p>
+<p>Hooks run before starting code suggestions.</p>
 <hr />
 <h3 id="lsp-before-open-hook"><code>lsp-before-open-hook</code><a class="headerlink" href="#lsp-before-open-hook" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>hook</code></p>
@@ -5378,18 +5489,18 @@ for a new workspace.</p>
 <h3 id="lsp-before-save-edits"><code>lsp-before-save-edits</code><a class="headerlink" href="#lsp-before-save-edits" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>If non-nil, <code>lsp-mode</code> will apply edits suggested by the language server
+<p>If non-nil, `lsp-mode' will apply edits suggested by the language server
 before saving a document.</p>
 <hr />
 <h3 id="lsp-client-packages"><code>lsp-client-packages</code><a class="headerlink" href="#lsp-client-packages" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat symbol)</code></p>
-<p><em>Default:</em> <code>(ccls lsp-actionscript lsp-ada lsp-angular lsp-ansible lsp-asm lsp-astro lsp-autotools lsp-awk lsp-bash lsp-beancount lsp-bufls lsp-clangd lsp-clojure lsp-cmake lsp-cobol lsp-credo lsp-crystal lsp-csharp lsp-css lsp-copilot lsp-cucumber lsp-cypher lsp-d lsp-dart lsp-dhall lsp-docker lsp-dockerfile lsp-earthly lsp-elixir lsp-elm lsp-emmet lsp-erlang lsp-eslint lsp-fortran lsp-futhark lsp-fsharp lsp-gdscript lsp-gleam lsp-glsl lsp-go lsp-golangci-lint lsp-grammarly lsp-graphql lsp-groovy lsp-hack lsp-haskell lsp-haxe lsp-idris lsp-java lsp-javascript lsp-jq lsp-json lsp-kotlin lsp-latex lsp-lisp lsp-ltex lsp-lua lsp-fennel lsp-magik lsp-markdown lsp-marksman lsp-mdx lsp-meson lsp-metals lsp-mint lsp-mojo lsp-move lsp-mssql lsp-nextflow lsp-nginx lsp-nim lsp-nix lsp-nushell lsp-ocaml lsp-openscad lsp-pascal lsp-perl lsp-perlnavigator lsp-php lsp-pls lsp-purescript lsp-pwsh lsp-pyls lsp-pylsp lsp-pyright lsp-python-ms lsp-qml lsp-r lsp-racket lsp-remark lsp-rf lsp-roslyn lsp-rubocop lsp-ruby-lsp lsp-ruby-syntax-tree lsp-ruff lsp-rust lsp-semgrep lsp-shader lsp-solargraph lsp-solidity lsp-sonarlint lsp-sorbet lsp-sourcekit lsp-sql lsp-sqls lsp-steep lsp-svelte lsp-tailwindcss lsp-terraform lsp-tex lsp-tilt lsp-toml lsp-trunk lsp-ttcn3 lsp-typeprof lsp-typespec lsp-v lsp-vala lsp-verilog lsp-vetur lsp-vhdl lsp-vimscript lsp-volar lsp-wgsl lsp-xml lsp-yaml lsp-yang lsp-zig)</code></p>
+<p><em>Default:</em> <code>(ccls lsp-actionscript lsp-ada lsp-angular lsp-ansible lsp-asm lsp-astro lsp-autotools lsp-awk lsp-bash lsp-beancount lsp-bufls lsp-clangd lsp-clojure lsp-cmake lsp-cobol lsp-credo lsp-crystal lsp-csharp lsp-c3 lsp-css lsp-copilot lsp-cucumber lsp-cypher lsp-d lsp-dart lsp-dhall lsp-docker lsp-dockerfile lsp-earthly lsp-elixir lsp-elm lsp-emmet lsp-erlang lsp-eslint lsp-fortran lsp-futhark lsp-fsharp lsp-gdscript lsp-gleam lsp-glsl lsp-go lsp-golangci-lint lsp-grammarly lsp-graphql lsp-groovy lsp-hack lsp-haskell lsp-haxe lsp-idris lsp-java lsp-javascript lsp-jq lsp-json lsp-kotlin lsp-kubernetes-helm lsp-latex lsp-lisp lsp-ltex lsp-ltex-plus lsp-lua lsp-fennel lsp-magik lsp-markdown lsp-marksman lsp-matlab lsp-mdx lsp-meson lsp-metals lsp-mint lsp-mojo lsp-move lsp-mssql lsp-nextflow lsp-nginx lsp-nim lsp-nix lsp-nushell lsp-ocaml lsp-openscad lsp-pascal lsp-perl lsp-perlnavigator lsp-php lsp-pls lsp-purescript lsp-pwsh lsp-pyls lsp-pylsp lsp-pyright lsp-python-ms lsp-qml lsp-r lsp-racket lsp-remark lsp-rf lsp-roc lsp-roslyn lsp-rubocop lsp-ruby-lsp lsp-ruby-syntax-tree lsp-ruff lsp-rust lsp-semgrep lsp-shader lsp-solargraph lsp-solidity lsp-sonarlint lsp-sorbet lsp-sourcekit lsp-sql lsp-sqls lsp-steep lsp-svelte lsp-tailwindcss lsp-terraform lsp-tex lsp-tilt lsp-toml lsp-trunk lsp-ts-query lsp-ttcn3 lsp-typeprof lsp-typespec lsp-v lsp-vala lsp-verilog lsp-vetur lsp-vhdl lsp-vimscript lsp-volar lsp-wgsl lsp-xml lsp-yaml lsp-yang lsp-zig)</code></p>
 <p>List of the clients to be automatically required.</p>
 <hr />
 <h3 id="lsp-configure-hook"><code>lsp-configure-hook</code><a class="headerlink" href="#lsp-configure-hook" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>hook</code></p>
 <p><em>Default:</em> <code>((closure (t) nil (if (and lsp-inline-completion-enable (lsp-feature? textDocument/inlineCompletion)) (progn (lsp-inline-completion-mode)))) (closure (flymake-mode flymake-diagnostic-functions lsp-diagnostics-mode flycheck-checkers flycheck-checker flycheck-check-syntax-automatically flycheck-mode t) nil (if lsp-auto-configure (progn (lsp-diagnostics--enable)))) (closure (company-abort-on-unique-match company-backends yas-indent-line t) nil (if (and lsp-auto-configure lsp-completion-enable) (progn (lsp-completion--enable)))))</code></p>
-<p>Hooks to run when <code>lsp-configure-buffer</code> is called.</p>
+<p>Hooks to run when `lsp-configure-buffer' is called.</p>
 <hr />
 <h3 id="lsp-debounce-full-sync-notifications"><code>lsp-debounce-full-sync-notifications</code><a class="headerlink" href="#lsp-debounce-full-sync-notifications" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -5412,10 +5523,10 @@ ERROR.</p>
 <h3 id="lsp-details-face"><code>lsp-details-face</code><a class="headerlink" href="#lsp-details-face" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>face</code></p>
 <p><em>Default:</em> <code>((t :height 0.8 :inherit shadow))</code></p>
-<p>Used to display additional information throughout <code>lsp</code>.
+<p>Used to display additional information throughout <code>lsp'.
 Things like line numbers, signatures, ... are considered
 additional information. Often, additional faces are defined that
-inherit from this face by default, like <code>lsp-signature-face</code>, and
+inherit from this face by default, like</code>lsp-signature-face', and
 they may be customized for finer control.</p>
 <hr />
 <h3 id="lsp-diagnostics-updated-hook"><code>lsp-diagnostics-updated-hook</code><a class="headerlink" href="#lsp-diagnostics-updated-hook" title="Permanent link">#</a></h3>
@@ -5448,13 +5559,13 @@ respectively.</p>
 <h3 id="lsp-eldoc-enable-hover"><code>lsp-eldoc-enable-hover</code><a class="headerlink" href="#lsp-eldoc-enable-hover" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>If non-nil, <code>eldoc</code> will display hover info when it is present.</p>
+<p>If non-nil, `eldoc' will display hover info when it is present.</p>
 <hr />
 <h3 id="lsp-eldoc-render-all"><code>lsp-eldoc-render-all</code><a class="headerlink" href="#lsp-eldoc-render-all" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>Display all of the info returned by textDocument/hover.
-If this is set to nil, <code>eldoc</code> will show only the symbol information.</p>
+If this is set to nil, `eldoc' will show only the symbol information.</p>
 <hr />
 <h3 id="lsp-enable-dap-auto-configure"><code>lsp-enable-dap-auto-configure</code><a class="headerlink" href="#lsp-enable-dap-auto-configure" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -5475,8 +5586,7 @@ the server has requested that.</p>
 <h3 id="lsp-enable-imenu"><code>lsp-enable-imenu</code><a class="headerlink" href="#lsp-enable-imenu" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>If non-nil, automatically enable <code>imenu</code> integration when server provides
-<code>textDocument/documentSymbol</code>.</p>
+<p>If non-nil, automatically enable <code>imenu' integration when server provides</code>textDocument/documentSymbol'.</p>
 <hr />
 <h3 id="lsp-enable-indentation"><code>lsp-enable-indentation</code><a class="headerlink" href="#lsp-enable-indentation" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -5493,7 +5603,7 @@ supported by the language server.</p>
 <h3 id="lsp-enable-on-type-formatting"><code>lsp-enable-on-type-formatting</code><a class="headerlink" href="#lsp-enable-on-type-formatting" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Enable <code>textDocument/onTypeFormatting</code> integration.</p>
+<p>Enable `textDocument/onTypeFormatting' integration.</p>
 <hr />
 <h3 id="lsp-enable-suggest-server-download"><code>lsp-enable-suggest-server-download</code><a class="headerlink" href="#lsp-enable-suggest-server-download" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -5508,7 +5618,7 @@ supported by the language server.</p>
 <h3 id="lsp-enable-text-document-color"><code>lsp-enable-text-document-color</code><a class="headerlink" href="#lsp-enable-text-document-color" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Enable <code>textDocument/documentColor</code> integration.</p>
+<p>Enable `textDocument/documentColor' integration.</p>
 <hr />
 <h3 id="lsp-enable-xref"><code>lsp-enable-xref</code><a class="headerlink" href="#lsp-enable-xref" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -5534,12 +5644,12 @@ supported by the language server.</p>
 <p><em>Type:</em> <code>face</code></p>
 <p><em>Default:</em> <code>((t :underline t))</code></p>
 <p>Face used to highlight the identifier being renamed.
-Renaming can be done using <code>lsp-rename</code>.</p>
+Renaming can be done using `lsp-rename'.</p>
 <hr />
 <h3 id="lsp-file-watch-ignored-directories"><code>lsp-file-watch-ignored-directories</code><a class="headerlink" href="#lsp-file-watch-ignored-directories" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat string)</code></p>
-<p><em>Default:</em> <code>([/\\]\.git\' [/\\]\.github\' [/\\]\.gitlab\' [/\\]\.circleci\' [/\\]\.hg\' [/\\]\.bzr\' [/\\]_darcs\' [/\\]\.svn\' [/\\]_FOSSIL_\' [/\\]\.idea\' [/\\]\.ensime_cache\' [/\\]\.eunit\' [/\\]node_modules [/\\]\.yarn\' [/\\]\.fslckout\' [/\\]\.tox\' [/\\]\.nox\' [/\\]dist\' [/\\]dist-newstyle\' [/\\]\.stack-work\' [/\\]\.bloop\' [/\\]\.metals\' [/\\]target\' [/\\]\.ccls-cache\' [/\\]\.vs\' [/\\]\.vscode\' [/\\]\.venv\' [/\\]\.mypy_cache\' [/\\]\.pytest_cache\' [/\\]\.build\' [/\\]__pycache__\' [/\\]site-packages\' [/\\].pyenv\' [/\\]\.deps\' [/\\]build-aux\' [/\\]autom4te.cache\' [/\\]\.reference\' [/\\]bazel-[^/\\]+\' [/\\]\.cache[/\\]lsp-csharp\' [/\\]\.meta\' [/\\]\.nuget\' [/\\]Library\' [/\\]\.lsp\' [/\\]\.clj-kondo\' [/\\]\.shadow-cljs\' [/\\]\.babel_cache\' [/\\]\.cpcache\' [/\\]\checkouts\' [/\\]\.gradle\' [/\\]\.m2\' [/\\]bin/Debug\' [/\\]obj\' [/\\]_opam\' [/\\]_build\' [/\\]\.elixir_ls\' [/\\]\.elixir-tools\' [/\\]\.terraform\' [/\\]\.terragrunt-cache\' [/\\]\result [/\\]\result-bin [/\\]\.direnv\')</code></p>
-<p>List of regexps matching directory paths which won`t be monitored when
+<p><em>Default:</em> <code>([/\\]\.git\' [/\\]\.github\' [/\\]\.gitlab\' [/\\]\.circleci\' [/\\]\.hg\' [/\\]\.bzr\' [/\\]_darcs\' [/\\]\.svn\' [/\\]_FOSSIL_\' [/\\]\.idea\' [/\\]\.ensime_cache\' [/\\]\.eunit\' [/\\]node_modules [/\\]\.yarn\' [/\\]\.turbo\' [/\\]\.fslckout\' [/\\]\.tox\' [/\\]\.nox\' [/\\]dist\' [/\\]dist-newstyle\' [/\\]\.stack-work\' [/\\]\.bloop\' [/\\]\.bsp\' [/\\]\.metals\' [/\\]target\' [/\\]\.ccls-cache\' [/\\]\.vs\' [/\\]\.vscode\' [/\\]\.venv\' [/\\]\.mypy_cache\' [/\\]\.pytest_cache\' [/\\]\.build\' [/\\]__pycache__\' [/\\]site-packages\' [/\\].pyenv\' [/\\]\.deps\' [/\\]build-aux\' [/\\]autom4te.cache\' [/\\]\.reference\' [/\\]bazel-[^/\\]+\' [/\\]\.cache[/\\]lsp-csharp\' [/\\]\.meta\' [/\\]\.nuget\' [/\\]Library\' [/\\]\.lsp\' [/\\]\.clj-kondo\' [/\\]\.shadow-cljs\' [/\\]\.babel_cache\' [/\\]\.cpcache\' [/\\]\checkouts\' [/\\]\.gradle\' [/\\]\.m2\' [/\\]bin/Debug\' [/\\]obj\' [/\\]_opam\' [/\\]_build\' [/\\]\.elixir_ls\' [/\\]\.elixir-tools\' [/\\]\.terraform\' [/\\]\.terragrunt-cache\' [/\\]\result [/\\]\result-bin [/\\]\.direnv\')</code></p>
+<p>List of regexps matching directory paths which won't be monitored when
 creating file watches. Customization of this variable is only honored at
 the global level or at a root of an lsp workspace.</p>
 <hr />
@@ -5552,7 +5662,7 @@ not be sent to the server.</p>
 a directory; it merely prevents notifications pertaining to
 matched files from being sent to the server.  To prevent a
 file-watch from being created for a directory, customize
-<code>lsp-file-watch-ignored-directories</code></p>
+`lsp-file-watch-ignored-directories'</p>
 <p>Customization of this variable is only honored at the global
 level or at a root of an lsp workspace.</p>
 <hr />
@@ -5566,9 +5676,8 @@ Set to nil to disable the warning.</p>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
 <p>If non-nil send the document changes update before sending other messages.</p>
-<p>If nil, and <code>lsp-debounce-full-sync-notifications</code> is non-nil,
- change notifications will be throttled by
- <code>lsp-debounce-full-sync-notifications-interval</code> regardless of
+<p>If nil, and <code>lsp-debounce-full-sync-notifications' is non-nil,
+ change notifications will be throttled by</code>lsp-debounce-full-sync-notifications-interval' regardless of
  other messages.</p>
 <hr />
 <h3 id="lsp-folding-line-folding-only"><code>lsp-folding-line-folding-only</code><a class="headerlink" href="#lsp-folding-line-folding-only" title="Permanent link">#</a></h3>
@@ -5586,9 +5695,9 @@ Set to nil to disable the warning.</p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>Ignore the session file when calculating the project root.
 You almost always want to set lsp-auto-guess-root too.
-Do <em>not</em> use this setting unless you are familiar with <code>lsp-mode</code>
+Do <em>not</em> use this setting unless you are familiar with <code>lsp-mode'
 internals and you are sure that all of your projects are
-following <code>projectile</code>/<code>project.el</code> conventions.</p>
+following</code>projectile'/`project.el' conventions.</p>
 <hr />
 <h3 id="lsp-gunzip-script"><code>lsp-gunzip-script</code><a class="headerlink" href="#lsp-gunzip-script" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
@@ -5600,7 +5709,7 @@ in place.</p>
 <h3 id="lsp-idle-delay"><code>lsp-idle-delay</code><a class="headerlink" href="#lsp-idle-delay" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>number</code></p>
 <p><em>Default:</em> <code>0.5</code></p>
-<p>Debounce interval for <code>after-change-functions</code>.</p>
+<p>Debounce interval for `after-change-functions'.</p>
 <hr />
 <h3 id="lsp-inlay-hint-enable"><code>lsp-inlay-hint-enable</code><a class="headerlink" href="#lsp-inlay-hint-enable" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -5633,11 +5742,11 @@ call-site).</p>
 <p><em>Default:</em> <code>%s</code></p>
 <p>Format string for variable inlays (part of the inlay face).</p>
 <hr />
-<h3 id="lsp-inline-completion-accepted-hook"><code>lsp-inline-completion-accepted-hook</code><a class="headerlink" href="#lsp-inline-completion-accepted-hook" title="Permanent link">#</a></h3>
+<h3 id="lsp-inline-completion-accepted-functions"><code>lsp-inline-completion-accepted-functions</code><a class="headerlink" href="#lsp-inline-completion-accepted-functions" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>hook</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>Hooks executed after accepting a code suggestion. The hooks receive the
-text range that was updated by the completion</p>
+<p>Functions executed after accepting a code suggestion.
+The functions receive the text range that was updated by the completion.</p>
 <hr />
 <h3 id="lsp-inline-completion-before-show-hook"><code>lsp-inline-completion-before-show-hook</code><a class="headerlink" href="#lsp-inline-completion-before-show-hook" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>hook</code></p>
@@ -5647,7 +5756,7 @@ text range that was updated by the completion</p>
 <h3 id="lsp-inline-completion-cancelled-hook"><code>lsp-inline-completion-cancelled-hook</code><a class="headerlink" href="#lsp-inline-completion-cancelled-hook" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>hook</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>Hooks executed after cancelling the completion UI</p>
+<p>Hooks executed after cancelling the completion UI.</p>
 <hr />
 <h3 id="lsp-inline-completion-enable"><code>lsp-inline-completion-enable</code><a class="headerlink" href="#lsp-inline-completion-enable" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -5658,17 +5767,17 @@ text range that was updated by the completion</p>
 <p><em>Type:</em> <code>number</code></p>
 <p><em>Default:</em> <code>2</code></p>
 <p>The number of seconds before trying to fetch inline completions, when
-lsp-inline-completion-mode is active</p>
+lsp-inline-completion-mode is active.</p>
 <hr />
 <h3 id="lsp-inline-completion-inhibit-predicates"><code>lsp-inline-completion-inhibit-predicates</code><a class="headerlink" href="#lsp-inline-completion-inhibit-predicates" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat function)</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>When a function of this list returns non nil, lsp-inline-completion-mode will not show the completion</p>
+<p>When a function of this list returns non nil, lsp-inline-completion-mode will not show the completion.</p>
 <hr />
 <h3 id="lsp-inline-completion-mode-inhibit-when-company-active"><code>lsp-inline-completion-mode-inhibit-when-company-active</code><a class="headerlink" href="#lsp-inline-completion-mode-inhibit-when-company-active" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>If the inline completion mode should avoid calling completions when company is active</p>
+<p>If the inline completion mode should avoid calling completions when company is active.</p>
 <hr />
 <h3 id="lsp-inline-completion-overlay-face"><code>lsp-inline-completion-overlay-face</code><a class="headerlink" href="#lsp-inline-completion-overlay-face" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>face</code></p>
@@ -5694,18 +5803,18 @@ lsp-inline-completion-mode is active</p>
 <p><em>Type:</em> <code>face</code></p>
 <p><em>Default:</em> <code>((t :foreground green))</code></p>
 <p>Face used for installation buffers still in progress.
-Used in <code>lsp-select-installation-buffer</code>.</p>
+Used in `lsp-select-installation-buffer'.</p>
 <hr />
 <h3 id="lsp-installation-finished-buffer-face"><code>lsp-installation-finished-buffer-face</code><a class="headerlink" href="#lsp-installation-finished-buffer-face" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>face</code></p>
 <p><em>Default:</em> <code>((t :foreground orange))</code></p>
 <p>Face used for finished installation buffers.
-Used in <code>lsp-select-installation-buffer</code>.</p>
+Used in `lsp-select-installation-buffer'.</p>
 <hr />
 <h3 id="lsp-io-messages-max"><code>lsp-io-messages-max</code><a class="headerlink" href="#lsp-io-messages-max" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(choice (const :tag Unlimited t) (integer :tag Messages))</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Maximum number of messages that can be locked in a <code>lsp-io</code> buffer.</p>
+<p>Maximum number of messages that can be locked in a `lsp-io' buffer.</p>
 <hr />
 <h3 id="lsp-keep-workspace-alive"><code>lsp-keep-workspace-alive</code><a class="headerlink" href="#lsp-keep-workspace-alive" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -5742,7 +5851,7 @@ the buffer when it becomes large.</p>
 <h3 id="lsp-on-idle-hook"><code>lsp-on-idle-hook</code><a class="headerlink" href="#lsp-on-idle-hook" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>hook</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>Hooks to run after <code>lsp-idle-delay</code>.</p>
+<p>Hooks to run after `lsp-idle-delay'.</p>
 <hr />
 <h3 id="lsp-overlay-document-color-char"><code>lsp-overlay-document-color-char</code><a class="headerlink" href="#lsp-overlay-document-color-char" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
@@ -5763,7 +5872,7 @@ the buffer when it becomes large.</p>
 <p><em>Type:</em> <code>(choice :tag Choose a spinner by name (const 3-line-clock) (const 2-line-clock) (const flipping-line) (const rotating-line) (const progress-bar) (const progress-bar-filled) (const vertical-breathing) (const vertical-rising) (const horizontal-breathing) (const horizontal-breathing-long) (const horizontal-moving) (const minibox) (const triangle) (const box-in-box) (const box-in-circle) (const half-circle) (const moon))</code></p>
 <p><em>Default:</em> <code>progress-bar</code></p>
 <p>Holds the type of spinner to be used in the mode-line.
-Takes a value accepted by <code>spinner-start</code>.</p>
+Takes a value accepted by `spinner-start'.</p>
 <hr />
 <h3 id="lsp-progress-via-spinner"><code>lsp-progress-via-spinner</code><a class="headerlink" href="#lsp-progress-via-spinner" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -5779,16 +5888,15 @@ Takes a value accepted by <code>spinner-start</code>.</p>
 <p><em>Type:</em> <code>face</code></p>
 <p><em>Default:</em> <code>((t :inherit font-lock-variable-name-face))</code></p>
 <p>Face used to display the rename placeholder in.
-When calling <code>lsp-rename</code> interactively, this will be the face of
+When calling `lsp-rename' interactively, this will be the face of
 the new name.</p>
 <hr />
 <h3 id="lsp-rename-use-prepare"><code>lsp-rename-use-prepare</code><a class="headerlink" href="#lsp-rename-use-prepare" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Whether <code>lsp-rename</code> should do a prepareRename first.
+<p>Whether <code>lsp-rename' should do a prepareRename first.
 For some language servers, textDocument/prepareRename might be
-too slow, in which case this variable may be set to nil.
-<code>lsp-rename</code> will then use <code>thing-at-point</code> <code>symbol</code> to determine
+too slow, in which case this variable may be set to nil.</code>lsp-rename' will then use <code>thing-at-point'</code>symbol' to determine
 the symbol to rename at point.</p>
 <hr />
 <h3 id="lsp-request-while-no-input-may-block"><code>lsp-request-while-no-input-may-block</code><a class="headerlink" href="#lsp-request-while-no-input-may-block" title="Permanent link">#</a></h3>
@@ -5832,7 +5940,7 @@ Changes take effect only when a new session is started.</p>
 <h3 id="lsp-signature-cycle"><code>lsp-signature-cycle</code><a class="headerlink" href="#lsp-signature-cycle" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Whether <code>lsp-signature-next</code> and prev should cycle.</p>
+<p>Whether `lsp-signature-next' and prev should cycle.</p>
 <hr />
 <h3 id="lsp-signature-doc-lines"><code>lsp-signature-doc-lines</code><a class="headerlink" href="#lsp-signature-doc-lines" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>number</code></p>
@@ -5842,7 +5950,7 @@ Changes take effect only when a new session is started.</p>
 <h3 id="lsp-signature-face"><code>lsp-signature-face</code><a class="headerlink" href="#lsp-signature-face" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>face</code></p>
 <p><em>Default:</em> <code>((t :inherit lsp-details-face))</code></p>
-<p>Used to display signatures in <code>imenu</code>, ....</p>
+<p>Used to display signatures in `imenu', ....</p>
 <hr />
 <h3 id="lsp-signature-function"><code>lsp-signature-function</code><a class="headerlink" href="#lsp-signature-function" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>function</code></p>
@@ -5859,12 +5967,12 @@ called with nil the signature info must be cleared.</p>
 <h3 id="lsp-signature-posframe"><code>lsp-signature-posframe</code><a class="headerlink" href="#lsp-signature-posframe" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>face</code></p>
 <p><em>Default:</em> <code>((t :inherit tooltip))</code></p>
-<p>Background and foreground for <code>lsp-signature-posframe</code>.</p>
+<p>Background and foreground for `lsp-signature-posframe'.</p>
 <hr />
 <h3 id="lsp-signature-render-documentation"><code>lsp-signature-render-documentation</code><a class="headerlink" href="#lsp-signature-render-documentation" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Display signature documentation in <code>eldoc</code>.</p>
+<p>Display signature documentation in `eldoc'.</p>
 <hr />
 <h3 id="lsp-symbol-highlighting-skip-current"><code>lsp-symbol-highlighting-skip-current</code><a class="headerlink" href="#lsp-symbol-highlighting-skip-current" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -5878,7 +5986,7 @@ called with nil the signature info must be cleared.</p>
 Various Symbol objects in the LSP protocol have an integral type,
 specifying what they are. This alist maps such type integrals to
 readable representations of them. See
-<code>https://microsoft.github.io/language-server-protocol/specifications/specification-current/</code>,
+`https://microsoft.github.io/language-server-protocol/specifications/specification-current/',
 namespace SymbolKind.</p>
 <hr />
 <h3 id="lsp-tar-script"><code>lsp-tar-script</code><a class="headerlink" href="#lsp-tar-script" title="Permanent link">#</a></h3>
@@ -5906,7 +6014,7 @@ in place.</p>
 <h3 id="lsp-unconfigure-hook"><code>lsp-unconfigure-hook</code><a class="headerlink" href="#lsp-unconfigure-hook" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>hook</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>Hooks to run when <code>lsp-unconfig-buffer</code> is called.</p>
+<p>Hooks to run when `lsp-unconfig-buffer' is called.</p>
 <hr />
 <h3 id="lsp-unzip-script"><code>lsp-unzip-script</code><a class="headerlink" href="#lsp-unzip-script" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
@@ -5947,7 +6055,7 @@ The hook will receive two parameters list of added and removed folders.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 30, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2025</span>
       
     
   </small>

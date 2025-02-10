@@ -1334,6 +1334,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-c3-lsp/" class="md-nav__link">
+        C3 (c3-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-clojure/" class="md-nav__link">
         Clojure
       </a>
@@ -1518,6 +1532,34 @@
     <li class="md-nav__item">
       <a href="../lsp-elm/" class="md-nav__link">
         Elm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/elisp-lsp/ellsp" class="md-nav__link">
+        Emacs Lisp (Ellsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/emacs-elsa/Elsa" class="md-nav__link">
+        Emacs Lisp (Elsa)
       </a>
     </li>
   
@@ -2087,6 +2129,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ltex-plus/" class="md-nav__link">
+        LanguageTool (LTEX+)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-lisp/" class="md-nav__link">
         Lisp
       </a>
@@ -2187,6 +2243,20 @@
     <li class="md-nav__item">
       <a href="../lsp-marksman/" class="md-nav__link">
         Marksman
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-matlab/" class="md-nav__link">
+        MATLAB
       </a>
     </li>
   
@@ -2675,6 +2745,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -3011,6 +3095,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3209,6 +3307,20 @@
     <li class="md-nav__item">
       <a href="../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -3864,8 +3976,7 @@
 <p>The file path to a tsconfig.json file.
 The path can be either be relative to the workspace, or an
 absolute path.</p>
-<p>Examples: <code>./tsconfig.json</code>,
-<code>/path/to/tsconfig.json</code>, <code>C:\path\to\tsconfig.json</code></p>
+<p>Examples: <code>./tsconfig.json',</code>/path/to/tsconfig.json', `C:\path\to\tsconfig.json'</p>
 <hr />
 <h3 id="lsp-clients-deno-enable-code-lens-implementations"><code>lsp-clients-deno-enable-code-lens-implementations</code><a class="headerlink" href="#lsp-clients-deno-enable-code-lens-implementations" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -3881,8 +3992,7 @@ absolute path.</p>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
 <p>Enables or disables the display of code lens information for all functions.
-Setting this variable to <code>non-nil</code> implicitly enables
-<code>lsp-clients-deno-enable-code-lens-references</code>.</p>
+Setting this variable to <code>non-nil' implicitly enables</code>lsp-clients-deno-enable-code-lens-references'.</p>
 <hr />
 <h3 id="lsp-clients-deno-enable-lint"><code>lsp-clients-deno-enable-lint</code><a class="headerlink" href="#lsp-clients-deno-enable-lint" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -3892,7 +4002,7 @@ Setting this variable to <code>non-nil</code> implicitly enables
 <h3 id="lsp-clients-deno-enable-unstable"><code>lsp-clients-deno-enable-unstable</code><a class="headerlink" href="#lsp-clients-deno-enable-unstable" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>Controls if code will be type checked with Deno`s unstable APIs.</p>
+<p>Controls if code will be type checked with Deno's unstable APIs.</p>
 <hr />
 <h3 id="lsp-clients-deno-import-map"><code>lsp-clients-deno-import-map</code><a class="headerlink" href="#lsp-clients-deno-import-map" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>file</code></p>
@@ -3901,15 +4011,14 @@ Setting this variable to <code>non-nil</code> implicitly enables
 Import maps provide a way to relocate modules based on their
 specifiers.  The path can either be relative to the workspace, or
 an absolute path.</p>
-<p>Examples: <code>./import-map.json</code>,
-<code>/path/to/import-map.json</code>, <code>C:\path\to\import-map.json</code>.</p>
+<p>Examples: <code>./import-map.json',</code>/path/to/import-map.json', `C:\path\to\import-map.json'.</p>
 <hr />
 <h3 id="lsp-clients-deno-server"><code>lsp-clients-deno-server</code><a class="headerlink" href="#lsp-clients-deno-server" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>file</code></p>
 <p><em>Default:</em> <code>deno</code></p>
 <p>The Deno executable to use.
 Leave as just the executable name to use the default behavior of
-finding the executable with variable <code>exec-path</code>.</p>
+finding the executable with variable `exec-path'.</p>
 <hr />
 <h3 id="lsp-clients-deno-server-args"><code>lsp-clients-deno-server-args</code><a class="headerlink" href="#lsp-clients-deno-server-args" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat string)</code></p>
@@ -3924,7 +4033,7 @@ finding the executable with variable <code>exec-path</code>.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 30, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2025</span>
       
     
   </small>

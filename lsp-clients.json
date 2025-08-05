@@ -118,10 +118,10 @@
   },
   {
     "name": "copilot",
-    "full-name": "Github Copilot",
-    "server-name": "copilot-node-server",
-    "server-url": "https://www.npmjs.com/package/copilot-node-server",
-    "installation-url": "https://www.npmjs.com/package/copilot-node-server",
+    "full-name": "GitHub Copilot",
+    "server-name": "copilot-language-server",
+    "server-url": "https://www.npmjs.com/package/@github/copilot-language-server",
+    "installation-url": "https://www.npmjs.com/package/@github/copilot-language-server",
     "debugger": "Not available"
   },
   {
@@ -799,6 +799,14 @@
     "debugger": "Not available"
   },
   {
+    "name": "ols",
+    "full-name": "Odin Language Server",
+    "server-name": "ols",
+    "server-url": "https://github.com/DanielGavin/ols",
+    "installation-url": "https://github.com/DanielGavin/ols",
+    "debugger": "Not available"
+  },
+  {
     "name": "openscad",
     "full-name": "OpenSCAD",
     "server-name": "openscad-lsp",
@@ -938,6 +946,16 @@
     "client-name": "lsp-python-ms",
     "client-url": "https://github.com/emacs-lsp/lsp-python-ms",
     "installation-url": "https://github.com/emacs-lsp/lsp-python-ms",
+    "debugger": "Yes"
+  },
+  {
+    "name": "python-ty",
+    "full-name": "Python (ty)",
+    "server-name": "LSP support for Python(ty).",
+    "server-url": "https://github.com/astral-sh/ty",
+    "client-name": "lsp-python-ty",
+    "client-url": "https://github.com/astral-sh/ty",
+    "installation-url": "https://github.com/astral-sh/ty",
     "debugger": "Yes"
   },
   {
@@ -1119,6 +1137,14 @@
     "debugger": "Not available"
   },
   {
+    "name": "postgres",
+    "full-name": "SQL (postgres-ls)",
+    "server-name": "postgres-language-server",
+    "server-url": "https://github.com/supabase-community/postgres-language-server",
+    "installation-url": "https://pgtools.dev/#installation",
+    "debugger": "Not available"
+  },
+  {
     "name": "steep",
     "full-name": "Ruby (Steep)",
     "server-name": "steep",
@@ -1210,6 +1236,14 @@
     "server-name": "taplo",
     "server-url": "https://github.com/tamasfe/taplo",
     "installation": "cargo install taplo-cli --features lsp",
+    "debugger": "Not available"
+  },
+  {
+    "name": "toml-tombi",
+    "full-name": "TOML",
+    "server-name": "tombi",
+    "server-url": "https://github.com/tombi-toml/tombi",
+    "installation-url": "https://tombi-toml.github.io/tombi/docs/installation",
     "debugger": "Not available"
   },
   {
